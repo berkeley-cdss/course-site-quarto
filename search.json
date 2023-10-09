@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data 100: Principles and Techniques of Data Science",
+    "section": "",
+    "text": "Ed\nNote: DS100/fa23 has a div with templating for the instructors. Here’s a modest bit of use of variables that isn’t working yet, and also without full templating with loops and conditioning and abstraction of the layout."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Data 100: Principles and Techniques of Data Science",
+    "section": "Schedule",
+    "text": "Schedule\nNote: DS100 uses templating to fill out the schedule.\nWe’d like to be able to define custom html classes for the buttons below (presumably in CSS style file)\nWeek 1\n\n\n\nAug 24:\nLecture 1 Introduction\nNote 1, Note 2, Recording\n\n\n\nLecture Participation 1 Lecture Participation 1\n\n\n\nAug 25:\nLab 1 Prereq coding"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Jump to:"
+  },
+  {
+    "objectID": "syllabus.html#about-data-100",
+    "href": "syllabus.html#about-data-100",
+    "title": "Syllabus",
+    "section": "About Data 100",
+    "text": "About Data 100\nCombining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world. This intermediate level class bridges between Data 8 and upper division computer science and statistics courses as well as methods courses in other fields. In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​ Through a strong emphasis on data centric computing, quantitative critical thinking, and exploratory data analysis, this class covers key principles and techniques of data science. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.\n\nGoals\n\nPrepare students for advanced Berkeley courses in data-management, machine learning, and statistics, by providing the necessary foundation and context.\nEnable students to start careers as data scientists by providing experience working with real-world data, tools, and techniques.\nEmpower students to apply computational and inferential thinking to address real-world problems.\n\n\n\nPrerequisites\nWhile we are working to make this class widely accessible, we currently require the following (or equivalent) prerequisites. Prerequisites will be enforced in Data 100. It is your responsibility to know the material in the prerequisites."
+  },
+  {
+    "objectID": "calendar.html",
+    "href": "calendar.html",
+    "title": "Calendar",
+    "section": "",
+    "text": "We can just embed the iframe html:"
+  }
+]
