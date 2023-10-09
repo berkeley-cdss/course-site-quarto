@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  sidebar:
+    style: docked
+    logo: panda-logo.png
+    contents:
+      - href: index.qmd
+        text: Home / Schedule
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: calendar.qmd
+        text: Calendar
+      - section: "Units"
+        contents:
+          - unit1.qmd
+          - unit2.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
