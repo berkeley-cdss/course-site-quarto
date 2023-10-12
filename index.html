@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,7 +61,38 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-schedule .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-week','listing-days',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-week","listing-days"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-schedule'] = new List('listing-schedule', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -146,7 +179,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">Schedule</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">Schedule</a>
+  <ul class="collapse">
+  <li><a href="#a-templated-schedule" id="toc-a-templated-schedule" class="nav-link" data-scroll-target="#a-templated-schedule">A templated schedule</a></li>
+  <li><a href="#a-manual-schedule" id="toc-a-manual-schedule" class="nav-link" data-scroll-target="#a-manual-schedule">A manual schedule</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -171,6 +208,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p><link rel="stylesheet" href="styles.css"></p>
 <button type="button" class="btn btn-primary btn-lg" style="background-color:purple">
 Ed
 </button>
@@ -178,18 +216,7 @@ Ed
 DataHub
 </button>
 <p>
-</p><p>Note: <a href="https://github.com/DS-100/fa23">DS100/fa23</a> has a div with templating for the instructors. Here’s a modest bit of use of variables that isn’t working yet, and also without full templating with loops and conditioning and abstraction of the layout.</p>
-<div class="staffer">
-<img class="staffer-image" src="http://ds100.org/fa23/resources/assets/staff_pics/Fernando_Perez.jpeg" height="80" width="80" alt="Fernando Pérez">
-<div>
-<pre><code>&lt;h3 class="staffer-name"&gt;
-  &lt;a href="https://jupyter.org" target="_blank"&gt;Fernando Pérez&lt;/a&gt;
-  &lt;p class="staffer-pronouns"&gt;&lt;b&gt;He/Him/His&lt;/b&gt;&lt;/p&gt;
-&lt;/h3&gt;
-&lt;p&gt;&lt;a href="mailto:fernando.perez@berkeley.edu"&gt;fernando.perez@berkeley.edu&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Office Hours:&lt;/b&gt; Tue 11-12pm (Evans 419)&lt;/p&gt;</code></pre>
-</div>
-</div>
+</p><p>Note: <a href="https://github.com/DS-100/fa23">DS100/fa23</a> has a div with templating for the instructors.</p>
 <div class="callout callout-style-simple callout-none no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -200,10 +227,65 @@ DataHub
 </div>
 </div>
 </div>
+<p>Styling text (not sure why closer to letters than in DS100).</p>
+<div>
+<dl>
+<strong class="label label-lecture">Test 1</strong>
+</dl>
+</div>
 <section id="schedule" class="level2">
 <h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
-<p>Note: DS100 uses templating to fill out the schedule.</p>
+<p>Note: DS100 uses templating to fill out the schedule. Here we use Quarto’s EJS templating.</p>
 <p>We’d like to be able to define custom html classes for the buttons below (presumably in CSS style file)</p>
+<section id="a-templated-schedule" class="level3">
+<h3 class="anchored" data-anchor-id="a-templated-schedule">A templated schedule</h3>
+<p>The templating is basically working in terms of filling in values in the schedule.ejs file based on a schedule.yml file. I’m not sure how to apply the style for the <code>module</code> class (see <code>styles.css</code>) to mimic the styling in the DS100 page.</p>
+<div id="listing-schedule" class="quarto-listing quarto-listing-container-custom">
+<h4 class="anchored">Week 1</h4>
+<div class="module">
+<dl>
+      <dt>Aug 24:</dt>
+    <dd>
+       <dl><dt> 
+    <strong class="label label-Lecture">Lecture 1</strong> <a href="./test.pdf" target="_blank">Introduction</a>
+        </dt>
+        <dd><a href="https://ds100.org/fa23/lecture/lec01">Note 1</a></dd>
+        </dl>
+</dd>
+    <dd>
+    <strong class="label label-Lecture participation">Lecture participation 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 1</a>
+</dd>
+      <dt>Aug 25:</dt>
+    <dd>
+    <strong class="label label-Lab">Lab 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Coding (due Aug 29)</a>
+</dd>
+    <dd>
+    <strong class="label label-Homework">Homework 1A</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Plotting and Permutation Test (due Aug 31)</a>
+</dd>
+    <dd>
+    <strong class="label label-Homework">Homework 1B</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Math (due Aug 31)</a>
+</dd>
+   </dl>
+   </div>
+<h4 class="anchored">Week 2</h4>
+<div class="module">
+<dl>
+      <dt>Aug 29:</dt>
+    <dd>
+    <strong class="label label-Lecture">Lecture 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Pandas 1</a>
+</dd>
+    <dd>
+    <strong class="label label-Lecture participation">Lecture participation 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 2</a>
+</dd>
+   </dl>
+   </div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="a-manual-schedule" class="level3">
+<h3 class="anchored" data-anchor-id="a-manual-schedule">A manual schedule</h3>
 <p>Week 1</p>
 <table class="table">
 <tbody>
@@ -226,6 +308,8 @@ DataHub
 </table>
 
 
+
+</section>
 </section>
 
 </main> <!-- /main -->

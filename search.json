@@ -18,7 +18,7 @@
     "href": "unit1.html",
     "title": "Unit 1: Intro",
     "section": "",
-    "text": "An example of adding a styled div via html.\n\nThis content can be styled via the border class.\n\nAn example of an evaluated Python code chunk.\n\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n-0.04854528591463336\n\n\n\\[\n\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n\\]\nUse a \\(\\LaTeX\\) macro.\n\\[\nA = X \\trans Y\n\\]"
+    "text": "An example of adding a styled div via html.\n\nThis content can be styled via the border class.\n\nAn example of an evaluated Python code chunk.\n\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n0.029715716344917712\n\n\n\\[\n\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n\\]\nUse a \\(\\LaTeX\\) macro.\n\\[\nA = X \\trans Y\n\\]"
   },
   {
     "objectID": "syllabus.html",
@@ -39,14 +39,14 @@
     "href": "index.html",
     "title": "Data 100: Principles and Techniques of Data Science",
     "section": "",
-    "text": "Ed\nNote: DS100/fa23 has a div with templating for the instructors. Here’s a modest bit of use of variables that isn’t working yet, and also without full templating with loops and conditioning and abstraction of the layout."
+    "text": "Note: DS100/fa23 has a div with templating for the instructors.\nStyling text (not sure why closer to letters than in DS100)."
   },
   {
     "objectID": "index.html#schedule",
     "href": "index.html#schedule",
     "title": "Data 100: Principles and Techniques of Data Science",
     "section": "Schedule",
-    "text": "Schedule\nNote: DS100 uses templating to fill out the schedule.\nWe’d like to be able to define custom html classes for the buttons below (presumably in CSS style file)\nWeek 1\n\n\n\nAug 24:\nLecture 1 Introduction\nNote 1, Note 2, Recording\n\n\n\nLecture Participation 1 Lecture Participation 1\n\n\n\nAug 25:\nLab 1 Prereq coding"
+    "text": "Schedule\nNote: DS100 uses templating to fill out the schedule. Here we use Quarto’s EJS templating.\nWe’d like to be able to define custom html classes for the buttons below (presumably in CSS style file)\n\nA templated schedule\nThe templating is basically working in terms of filling in values in the schedule.ejs file based on a schedule.yml file. I’m not sure how to apply the style for the module class (see styles.css) to mimic the styling in the DS100 page.\n\nWeek 1\n\n\n      Aug 24:\n    \n        \n    Lecture 1 Introduction\n        \n        Note 1\n        \n\n    \n    Lecture participation 1 Lecture Participation 1\n\n      Aug 25:\n    \n    Lab 1 Prerequisite Coding (due Aug 29)\n\n    \n    Homework 1A Plotting and Permutation Test (due Aug 31)\n\n    \n    Homework 1B Prerequisite Math (due Aug 31)\n\n   \n   \nWeek 2\n\n\n      Aug 29:\n    \n    Lecture 1 Pandas 1\n\n    \n    Lecture participation 1 Lecture Participation 2\n\n   \n   \n\nNo matching items\n\n\n\n\nA manual schedule\nWeek 1\n\n\n\nAug 24:\nLecture 1 Introduction\nNote 1, Note 2, Recording\n\n\n\nLecture Participation 1 Lecture Participation 1\n\n\n\nAug 25:\nLab 1 Prereq coding"
   },
   {
     "objectID": "calendar.html",
