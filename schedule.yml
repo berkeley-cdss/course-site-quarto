@@ -1,0 +1,44 @@
+- week: 1
+  days:
+    - date: "Aug 24"
+      items:
+        - type: "Lecture"
+          id: "1"
+          name: Introduction
+          href: "./test.pdf"
+          auxil:
+            id: "Note 1"
+            href: "./unit1.html"
+        - type: "Participation"
+          id: "1"
+          name: Lecture Participation 1
+          href: "https://ds100.org/fa23/lecture/lec01"
+    - date: "Aug 25"
+      items:
+        - type: "Lab"
+          id: "1"
+          name: Prerequisite Coding (due Aug 29)
+          href: "https://ds100.org/fa23/lecture/lec01"
+        - type: "Homework"
+          id: "1A"
+          name: Plotting and Permutation Test (due Aug 31)
+          href: "https://ds100.org/fa23/lecture/lec01"
+        - type: "Homework"
+          id: "1B"
+          name: Prerequisite Math (due Aug 31)
+          href: "https://ds100.org/fa23/lecture/lec01"
+- week: 2
+  days:
+    - date: "Aug 29"
+      items:
+        - type: "Lecture"
+          id: "2"
+          name: Pandas 1
+          href: "https://ds100.org/fa23/lecture/lec01"
+        - type: "Participation"
+          id: "2"
+          name: Lecture Participation 2
+          href: "https://ds100.org/fa23/lecture/lec01"
+          auxil:
+            id: "Note 2"
+            href: "./unit2.html"

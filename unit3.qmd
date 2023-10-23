@@ -1,0 +1,35 @@
+---
+title: "Unit 3: More"
+format:
+  html:
+    code-fold: show
+    code-tools: true
+    include-before-body:
+     - file: macros.md
+  pdf: 
+    include-before-body:
+     - file: macros.tex
+---
+
+This is an example of using qmd as the source document with pdf as one target. I've taken out the qmd stuff that doesn't seem to render to pdf.
+
+## Evaluated Python code chunk
+
+```{python}
+import numpy as np
+np.mean(np.random.normal(size=100))
+```
+
+## LaTeX
+
+$$
+\theta = \int_0^\infty f(x,\theta)d\theta
+$$
+
+## LaTeX macro
+
+> **Warning**: need to look back at this as having `include-before-body` in the yaml causes extra space at top of page.
+
+$$
+A = X \trans Y
+$$

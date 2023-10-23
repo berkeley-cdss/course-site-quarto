@@ -1,0 +1,37 @@
+```{=html}
+<% for (const item of items) { %>
+
+   <h4>Week <%- item.week %></h4>
+
+   <table class="table" data-quarto-disable-processing="true">
+   <!-- 'table' class causes use of quarto styling for tables, seemingly from bootstrap.min.css -->
+   <!-- data-quarto-disable-processing="true" prevents Quarto processing of tables (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) -->
+   
+   <tbody>
+   <% for (const day of item.days) { %>
+
+        <% for (let i = 0; i < day.items.length; i++) { %>
+
+
+
+           <tr>
+           <% if (i == 0) { %>
+           <th scope="row" rowspan="<%- day.items.length %>"><%- day.date %>:</th>
+           <% } %>
+           <td><strong class="label label-<%- day.items[i].type %>"><%- day.items[i].type %> <%- day.items[i].id %></strong> <a href="<%- day.items[i].href %>" target="_blank"><%- day.items[i].name %></a></td>
+           <% if (day.items[i].auxil) { %>
+                <td><a href="<%- day.items[i].auxil.href %>"><%- day.items[i].auxil.id %></a></td>
+           <% } else{ %>
+                <td></td>
+           <% } %>
+                
+           </tr>
+        <% } %>
+   <% } %>
+   </tbody>
+   </table>
+  
+
+<% } %>
+
+```
