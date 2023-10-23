@@ -102,7 +102,7 @@
     "href": "unit1.html#evaluated-python-code-chunk",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk",
-    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n-0.03704980535552489"
+    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n-0.12830087528018663"
   },
   {
     "objectID": "unit1.html#latex",
@@ -151,7 +151,7 @@
     "href": "unit3.html#evaluated-python-code-chunk",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk",
-    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n0.11291332702790019"
+    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n0.03137643550041273"
   },
   {
     "objectID": "unit3.html#latex",
