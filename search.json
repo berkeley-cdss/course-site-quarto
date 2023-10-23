@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Data 999: Statistics XYZ",
     "section": "",
-    "text": "Note: DS100/fa23 has a div with templating for the instructors."
+    "text": "Ed\nNote: DS100/fa23 has a div with templating for the instructors."
   },
   {
     "objectID": "index.html#schedule",
@@ -102,7 +102,7 @@
     "href": "unit1.html#evaluated-python-code-chunk",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk",
-    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n0.1527947706873247"
+    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n-0.001750028847604894"
   },
   {
     "objectID": "unit1.html#latex",
@@ -151,7 +151,7 @@
     "href": "unit3.html#evaluated-python-code-chunk",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk",
-    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n0.04169616154365793"
+    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n-0.09537829071421677"
   },
   {
     "objectID": "unit3.html#latex",
