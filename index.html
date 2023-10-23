@@ -89,6 +89,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-buttons .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-button','listing-link','listing-color',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-button","listing-link","listing-color"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-buttons'] = new List('listing-buttons', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -226,25 +254,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<button class="button-purple">
-<a href="https://ibm.com">Ed</a>
-</button>
-<button class="button-green">
-<a href="https://ibm.com">DataHub</a>
-</button>
-<button class="button-orange">
-<a href="https://ibm.com">Gradescope</a>
-</button>
-<p>
-</p><p>Note: <a href="https://github.com/DS-100/fa23">DS100/fa23</a> has a div with templating for the instructors.</p>
-<div class="callout callout-style-simple callout-none no-icon">
-<div class="callout-body d-flex">
+<div id="listing-buttons" class="quarto-listing quarto-listing-container-custom">
+  <button class="button-purple"><a href="https://ibm.com">Ed</a></button>
+  <button class="button-green"><a href="https://ibm.com">DataHub</a></button>
+  <button class="button-orange"><a href="https://ibm.com">Gradescope</a></button>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<p>We could provide a templated listing of instructors here (or on its own page), similar to <a href="https://github.com/DS-100/fa23">DS100/fa23</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Announcement">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
+<div class="callout-title-container flex-fill">
+Announcement
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>This is this week’s announcement.</p>
-</div>
 </div>
 </div>
 <section id="schedule" class="level2">
