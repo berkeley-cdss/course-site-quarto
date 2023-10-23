@@ -10,9 +10,9 @@ listing:
 
 <link rel="stylesheet" href="styles.css">
 
-<button type="button" class="btn btn-primary" style="background-color:purple"><a href="https://ibm.com">Ed</a></button>
-<button type="button" class="btn btn-primary" style="background-color:orange"><a href="https://ibm.com">DataHub</a></button>
-<button type="button" class="btn btn-primary" style="background-color:green"><a href="https://ibm.com">Gradescope</a></button>
+<button class="button-purple"><a href="https://ibm.com">Ed</a></button>
+<button class="button-green"><a href="https://ibm.com">DataHub</a></button>
+<button class="button-orange"><a href="https://ibm.com">Gradescope</a></button>
 
 <p>
 Note: [DS100/fa23](https://github.com/DS-100/fa23) has a div with templating for the instructors. 
