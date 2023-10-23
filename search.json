@@ -49,20 +49,6 @@
     "text": "Dataset 2"
   },
   {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Jump to:"
-  },
-  {
-    "objectID": "syllabus.html#about-data-100",
-    "href": "syllabus.html#about-data-100",
-    "title": "Syllabus",
-    "section": "About Data 100",
-    "text": "About Data 100\nCombining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world. This intermediate level class bridges between Data 8 and upper division computer science and statistics courses as well as methods courses in other fields. In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​ Through a strong emphasis on data centric computing, quantitative critical thinking, and exploratory data analysis, this class covers key principles and techniques of data science. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.\n\nGoals\n\nPrepare students for advanced Berkeley courses in data-management, machine learning, and statistics, by providing the necessary foundation and context.\nEnable students to start careers as data scientists by providing experience working with real-world data, tools, and techniques.\nEmpower students to apply computational and inferential thinking to address real-world problems.\n\n\n\nPrerequisites\nWhile we are working to make this class widely accessible, we currently require the following (or equivalent) prerequisites. Prerequisites will be enforced in Data 100. It is your responsibility to know the material in the prerequisites."
-  },
-  {
     "objectID": "unit2.html",
     "href": "unit2.html",
     "title": "Unit 2: Next",
@@ -91,11 +77,18 @@
     "text": "Callout\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title."
   },
   {
-    "objectID": "reprex/index.html",
-    "href": "reprex/index.html",
-    "title": "Test",
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
     "section": "",
-    "text": "A table directly.\n\n\n\n\n\nHello\n\n\ntext\n\n\n2\n\n\n\n\n\n\n\n   \n   \n   \nHello\ntext\n1\n\n\n\n\n\nNo matching items"
+    "text": "Jump to:"
+  },
+  {
+    "objectID": "syllabus.html#about-data-100",
+    "href": "syllabus.html#about-data-100",
+    "title": "Syllabus",
+    "section": "About Data 100",
+    "text": "About Data 100\nCombining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world. This intermediate level class bridges between Data 8 and upper division computer science and statistics courses as well as methods courses in other fields. In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​ Through a strong emphasis on data centric computing, quantitative critical thinking, and exploratory data analysis, this class covers key principles and techniques of data science. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.\n\nGoals\n\nPrepare students for advanced Berkeley courses in data-management, machine learning, and statistics, by providing the necessary foundation and context.\nEnable students to start careers as data scientists by providing experience working with real-world data, tools, and techniques.\nEmpower students to apply computational and inferential thinking to address real-world problems.\n\n\n\nPrerequisites\nWhile we are working to make this class widely accessible, we currently require the following (or equivalent) prerequisites. Prerequisites will be enforced in Data 100. It is your responsibility to know the material in the prerequisites."
   },
   {
     "objectID": "unit1.html",
@@ -109,7 +102,7 @@
     "href": "unit1.html#evaluated-python-code-chunk",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk",
-    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n-0.06425180423726733"
+    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n0.1527947706873247"
   },
   {
     "objectID": "unit1.html#latex",
@@ -158,7 +151,7 @@
     "href": "unit3.html#evaluated-python-code-chunk",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk",
-    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n0.03942319589144847"
+    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n0.04169616154365793"
   },
   {
     "objectID": "unit3.html#latex",
