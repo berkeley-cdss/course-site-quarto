@@ -3,30 +3,18 @@
 .label-Lab { background-color: #C82DC6; border-radius: 9px; padding: 5px; }
 .label-Homework { background-color: #E62100; border-radius: 9px; padding: 5px; }
 
-
 th {
     width: 10%;
 }
-
 td:first-of-type {
     width: 60%;
+    border-bottom: none;
 }
-
 td:last-of-type {
     width: 30%;
+    border-bottom: none;
 }
 
 table {
     border: 2px solid;
 }
-
-button > a {
-    color: white;
-    text-decoration: none;
-}
-
-.border {
-  color:#069;
-  font-weight: bold;
-}
-

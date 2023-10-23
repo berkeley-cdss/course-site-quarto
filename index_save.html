@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About</title>
+<title>Data 100: Principles and Techniques of Data Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,7 +61,66 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-schedule .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-week','listing-days',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-week","listing-days"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-schedule'] = new List('listing-schedule', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-test .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-week','listing-days',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-week","listing-days"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-test'] = new List('listing-test', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -73,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">About</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data 100: Principles and Techniques of Data Science</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -137,37 +198,42 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./unit2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 2: Next</span></a>
+ <span class="menu-text">Unit 2: next</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./unit3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 3: More</span></a>
+ <span class="menu-text">Unit 3: more</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Datasets</span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">Schedule</a>
+  <ul class="collapse">
+  <li><a href="#a-templated-schedule" id="toc-a-templated-schedule" class="nav-link" data-scroll-target="#a-templated-schedule">A templated schedule</a></li>
+  <li><a href="#test-of-templating-md" id="toc-test-of-templating-md" class="nav-link" data-scroll-target="#test-of-templating-md">Test of templating md</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Data 100: Principles and Techniques of Data Science</h1>
+<p class="subtitle lead">UC Berkeley, Fall 2023</p>
 </div>
 
 
@@ -182,9 +248,97 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>About this site</p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<button type="button" class="btn btn-primary" style="background-color:purple">
+Ed
+</button>
+<button type="button" class="btn btn-primary" style="background-color:orange">
+DataHub
+</button>
+<p>Note: <a href="https://github.com/DS-100/fa23">DS100/fa23</a> has a div with templating for the instructors.</p>
+<div class="callout callout-style-simple callout-none no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Welcome to Week 8 of Data 100!</p>
+</div>
+</div>
+</div>
+<section id="schedule" class="level2">
+<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<p>Note: DS100 uses templating to fill out the schedule. Here we use Quarto’s EJS templating.</p>
+<p>We’d like to be able to define custom html classes for the buttons below (presumably in CSS style file)</p>
+<section id="a-templated-schedule" class="level3">
+<h3 class="anchored" data-anchor-id="a-templated-schedule">A templated schedule</h3>
+<p>The templating is basically working in terms of filling in values in the schedule.ejs file based on a schedule.yml file.</p>
+<div id="listing-schedule" class="quarto-listing quarto-listing-container-custom">
+
+   <h4 class="anchored">Week 1</h4>
+   <strong></strong><strong></strong><strong></strong><strong></strong><strong></strong><table class="table">
+   <tbody>
+          <!-- hack to prevent quarto from modifying <th> and <strong> -->
+           <tr>
+           <th scope="row" rowspan="2">Aug 24:</th>
+           <td><strong class="label label-Lecture">Lecture 1</strong> <a href="./test.pdf" target="_blank">Introduction</a></td>
+                <td><a href="./unit1.html">Note 1</a></td>
+           </tr>
+          <!-- hack to prevent quarto from modifying <th> and <strong> -->
+           <tr>
+           <td><strong class="label label-Participation">Participation 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 1</a></td>
+                <td></td>
+           </tr>
+          <!-- hack to prevent quarto from modifying <th> and <strong> -->
+           <tr>
+           <th scope="row" rowspan="3">Aug 25:</th>
+           <td><strong class="label label-Lab">Lab 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Coding (due Aug 29)</a></td>
+                <td></td>
+           </tr>
+          <!-- hack to prevent quarto from modifying <th> and <strong> -->
+           <tr>
+           <td><strong class="label label-Homework">Homework 1A</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Plotting and Permutation Test (due Aug 31)</a></td>
+                <td></td>
+           </tr>
+          <!-- hack to prevent quarto from modifying <th> and <strong> -->
+           <tr>
+           <td><strong class="label label-Homework">Homework 1B</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Math (due Aug 31)</a></td>
+                <td></td>
+           </tr>
+   </tbody>
+   </table>
+   <h4 class="anchored">Week 2</h4>
+   <strong></strong><strong></strong><table class="table">
+   <tbody>
+          <!-- hack to prevent quarto from modifying <th> and <strong> -->
+           <tr>
+           <th scope="row" rowspan="2">Aug 29:</th>
+           <td><strong class="label label-Lecture">Lecture 2</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Pandas 1</a></td>
+                <td></td>
+           </tr>
+          <!-- hack to prevent quarto from modifying <th> and <strong> -->
+           <tr>
+           <td><strong class="label label-Participation">Participation 2</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 2</a></td>
+                <td><a href="./unit2.html">Note 2</a></td>
+           </tr>
+   </tbody>
+   </table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="test-of-templating-md" class="level3">
+<h3 class="anchored" data-anchor-id="test-of-templating-md">Test of templating md</h3>
+<p>This doesn’t seem to work.</p>
+<div id="listing-test" class="quarto-listing quarto-listing-container-custom">
+
+</div>
 
 
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

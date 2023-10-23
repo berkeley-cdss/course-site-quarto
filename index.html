@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data 100: Principles and Techniques of Data Science</title>
+<title>Data 999: Statistics XYZ</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -170,17 +170,23 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./unit2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 2: next</span></a>
+ <span class="menu-text">Unit 2: Next</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./unit3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 3: more</span></a>
+ <span class="menu-text">Unit 3: More</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -194,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">Schedule</a>
   <ul class="collapse">
   <li><a href="#a-templated-schedule" id="toc-a-templated-schedule" class="nav-link" data-scroll-target="#a-templated-schedule">A templated schedule</a></li>
-  <li><a href="#a-manual-schedule" id="toc-a-manual-schedule" class="nav-link" data-scroll-target="#a-manual-schedule">A manual schedule</a></li>
+  <li><a href="#test-of-templating-md" id="toc-test-of-templating-md" class="nav-link" data-scroll-target="#test-of-templating-md">Test of templating md</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -204,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data 100: Principles and Techniques of Data Science</h1>
-<p class="subtitle lead">UC Berkeley, Fall 2023</p>
+<h1 class="title">Data 999: Statistics XYZ</h1>
+<p class="subtitle lead">UC Berkeley, Spring 2024</p>
 </div>
 
 
@@ -222,10 +228,13 @@ ul.task-list li input[type="checkbox"] {
 
 <p><link rel="stylesheet" href="styles.css"></p>
 <button type="button" class="btn btn-primary" style="background-color:purple">
-Ed
+<a href="https://ibm.com">Ed</a>
 </button>
 <button type="button" class="btn btn-primary" style="background-color:orange">
-DataHub
+<a href="https://ibm.com">DataHub</a>
+</button>
+<button type="button" class="btn btn-primary" style="background-color:green">
+<a href="https://ibm.com">Gradescope</a>
 </button>
 <p>
 </p><p>Note: <a href="https://github.com/DS-100/fa23">DS100/fa23</a> has a div with templating for the instructors.</p>
@@ -235,83 +244,74 @@ DataHub
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Welcome to Week 8 of Data 100!</p>
+<p>This is this week’s announcement.</p>
 </div>
 </div>
 </div>
 <section id="schedule" class="level2">
 <h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
 <p>Note: DS100 uses templating to fill out the schedule. Here we use Quarto’s EJS templating.</p>
-<p>We’d like to be able to define custom html classes for the buttons below (presumably in CSS style file)</p>
 <section id="a-templated-schedule" class="level3">
 <h3 class="anchored" data-anchor-id="a-templated-schedule">A templated schedule</h3>
-<p>The templating is basically working in terms of filling in values in the schedule.ejs file based on a schedule.yml file. I’m not sure how to apply the style for the <code>module</code> class (see <code>styles.css</code>) to mimic the styling in the DS100 page.</p>
+<p>The templating is basically working in terms of filling in values in the schedule.ejs file based on a schedule.yml file.</p>
 <div id="listing-schedule" class="quarto-listing quarto-listing-container-custom">
-<h4 class="anchored">Week 1</h4>
-<div class="module">
-<dl>
-      <dt>Aug 24:</dt>
-    <dd>
-       <dl><dt> 
-    <strong class="label label-Lecture">Lecture 1</strong> <a href="./test.pdf" target="_blank">Introduction</a>
-        </dt>
-        <dd><a href="./unit1.html">Note 1</a></dd>
-        </dl>
-</dd>
-    <dd>
-    <strong class="label label-Lecture participation">Lecture participation 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 1</a>
-</dd>
-      <dt>Aug 25:</dt>
-    <dd>
-    <strong class="label label-Lab">Lab 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Coding (due Aug 29)</a>
-</dd>
-    <dd>
-    <strong class="label label-Homework">Homework 1A</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Plotting and Permutation Test (due Aug 31)</a>
-</dd>
-    <dd>
-    <strong class="label label-Homework">Homework 1B</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Math (due Aug 31)</a>
-</dd>
-   </dl>
-   </div>
-<h4 class="anchored">Week 2</h4>
-<div class="module">
-<dl>
-      <dt>Aug 29:</dt>
-    <dd>
-    <strong class="label label-Lecture">Lecture 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Pandas 1</a>
-</dd>
-    <dd>
-    <strong class="label label-Lecture participation">Lecture participation 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 2</a>
-</dd>
-   </dl>
-   </div>
+
+   <h4 class="anchored">Week 1</h4>
+   <table class="table" data-quarto-disable-processing="true">
+   <!-- 'table' class causes use of quarto styling for tables, seemingly from bootstrap.min.css -->
+   <!-- data-quarto-disable-processing="true" prevents Quarto processing of tables (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) -->
+   <tbody>
+           <tr>
+           <th scope="row" rowspan="2">Aug 24:</th>
+           <td><strong class="label label-Lecture">Lecture 1</strong> <a href="./test.pdf" target="_blank">Introduction</a></td>
+                <td><a href="./unit1.html">Note 1</a></td>
+           </tr>
+           <tr>
+           <td><strong class="label label-Participation">Participation 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 1</a></td>
+                <td></td>
+           </tr>
+           <tr>
+           <th scope="row" rowspan="3">Aug 25:</th>
+           <td><strong class="label label-Lab">Lab 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Coding (due Aug 29)</a></td>
+                <td></td>
+           </tr>
+           <tr>
+           <td><strong class="label label-Homework">Homework 1A</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Plotting and Permutation Test (due Aug 31)</a></td>
+                <td></td>
+           </tr>
+           <tr>
+           <td><strong class="label label-Homework">Homework 1B</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Math (due Aug 31)</a></td>
+                <td></td>
+           </tr>
+   </tbody>
+   </table>
+   <h4 class="anchored">Week 2</h4>
+   <table class="table" data-quarto-disable-processing="true">
+   <!-- 'table' class causes use of quarto styling for tables, seemingly from bootstrap.min.css -->
+   <!-- data-quarto-disable-processing="true" prevents Quarto processing of tables (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) -->
+   <tbody>
+           <tr>
+           <th scope="row" rowspan="2">Aug 29:</th>
+           <td><strong class="label label-Lecture">Lecture 2</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Pandas 1</a></td>
+                <td></td>
+           </tr>
+           <tr>
+           <td><strong class="label label-Participation">Participation 2</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 2</a></td>
+                <td><a href="./unit2.html">Note 2</a></td>
+           </tr>
+   </tbody>
+   </table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
 </section>
-<section id="a-manual-schedule" class="level3">
-<h3 class="anchored" data-anchor-id="a-manual-schedule">A manual schedule</h3>
-<p>Week 1</p>
-<table class="table">
-<tbody>
-<tr class="odd">
-<td>Aug 24:</td>
-<td><strong class="label label-lecture">Lecture 1</strong> <a href="link">Introduction</a></td>
-<td>Note 1, Note 2, Recording</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong class="label label-lecture">Lecture Participation 1</strong> <a href="link2">Lecture Participation 1</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Aug 25:</td>
-<td><strong class="label label-lecture">Lab 1 Prereq coding</strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<section id="test-of-templating-md" class="level3">
+<h3 class="anchored" data-anchor-id="test-of-templating-md">Test of templating md</h3>
+<p>This doesn’t seem to work.</p>
+<div id="test">
+
+</div>
 
 
 
