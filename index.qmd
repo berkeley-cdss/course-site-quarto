@@ -5,19 +5,18 @@ listing:
   - id: schedule
     template: schedule.ejs
     contents: schedule.yml
-    type: table
+  - id: buttons
+    template: buttons.ejs
+    contents: buttons.yml
+    
 ---
 
-<link rel="stylesheet" href="styles.css">
+::: {#buttons}
+:::
 
-<button class="button-purple"><a href="https://ibm.com">Ed</a></button>
-<button class="button-green"><a href="https://ibm.com">DataHub</a></button>
-<button class="button-orange"><a href="https://ibm.com">Gradescope</a></button>
+We could provide a templated listing of instructors here (or on its own page), similar to [DS100/fa23](https://github.com/DS-100/fa23).
 
-<p>
-Note: [DS100/fa23](https://github.com/DS-100/fa23) has a div with templating for the instructors. 
-
-::: {.callout}
+::: {.callout-note title="Announcement"}
 This is this week's announcement.
 :::
 

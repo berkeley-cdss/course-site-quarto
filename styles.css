@@ -29,18 +29,6 @@ button {
     border: none;
 }
 
-.button-purple {
-    background-color: purple;
-}
-
-.button-orange {
-    background-color: orange;
-}
-
-.button-green {
-    background-color: green;
-}
-
 .border {
   color:#069;
   font-weight: bold;
