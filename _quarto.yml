@@ -5,6 +5,9 @@ website:
   sidebar:
     style: docked
     logo: panda-logo.png
+    tools:
+      - icon: github
+        href: https://github.com/berkeley-scf/stat999-quarto
     contents:
       - href: index.qmd
         text: Home / Schedule
@@ -15,8 +18,11 @@ website:
       - section: "Units"
         contents:
           - unit1.qmd
-          - unit2.qmd
-
+          - unit2.ipynb
+          - unit3.qmd
+      - href: data.qmd
+        text: Datasets
+          
 
 format:
   html:

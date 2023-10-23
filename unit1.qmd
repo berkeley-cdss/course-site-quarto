@@ -2,27 +2,87 @@
 title: "Unit 1: Intro"
 format:
   html:
-    include-in-header:
+    code-fold: show
+    code-tools: true
+    include-before-body:
      - file: macros.md
 ---
 
-::: {.border}
-This content can be styled via the border class.
-:::
+This is an example of using qmd as the source document.
 
-This is the mean of some random numbers using numpy.
+
+## Evaluated Python code chunk
 
 ```{python}
 import numpy as np
 np.mean(np.random.normal(size=100))
 ```
 
+## $\LaTeX$
+
 $$
 \theta = \int_0^\infty f(x,\theta)d\theta
 $$
 
-Use a $\LaTeX$ macro.
+## $\LaTeX$ macro
+
+> **Warning**: need to look back at this as having `include-before-body` in the yaml causes extra space at top of page.
 
 $$
 A = X \trans Y
 $$
+
+## Styled div via direct html
+
+::: {.border}
+This content can be styled via the border class.
+:::
+
+## A callout
+
+::: {.callout-tip}
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+## Tabset 
+
+::: {.panel-tabset}
+## R
+
+This code is not executed.
+
+```{.r}
+fizz_buzz <- function(fbnums = 1:50) {
+  output <- dplyr::case_when(
+    fbnums %% 15 == 0 ~ "FizzBuzz",
+    fbnums %% 3 == 0 ~ "Fizz",
+    fbnums %% 5 == 0 ~ "Buzz",
+    TRUE ~ as.character(fbnums)
+  )
+  print(output)
+}
+
+fizz_buzz(3)
+```
+
+## Python
+
+This code is executed.
+
+```{python}
+def fizz_buzz(num):
+  if num % 15 == 0:
+    print("FizzBuzz")
+  elif num % 5 == 0:
+    print("Buzz")
+  elif num % 3 == 0:
+    print("Fizz")
+  else:
+    print(num)
+    
+fizz_buzz(3)
+```
+
+:::
