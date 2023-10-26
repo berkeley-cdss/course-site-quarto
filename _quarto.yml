@@ -4,7 +4,7 @@ project:
 website:
   sidebar:
     style: docked
-    logo: panda-logo.png
+    logo: stat_bear.png
     tools:
       - icon: github
         href: https://github.com/berkeley-scf/stat999-quarto
@@ -17,9 +17,9 @@ website:
         text: Calendar
       - section: "Units"
         contents:
-          - unit1.qmd
-          - unit2.ipynb
-          - unit3.qmd
+          - units/unit1.qmd
+          - units/unit2.ipynb
+          - units/unit3.qmd
       - href: data.qmd
         text: Datasets
           
