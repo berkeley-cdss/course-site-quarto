@@ -1,5 +1,5 @@
 ---
-title: "Data 999: Statistics XYZ"
+title: "Statistics 999: Generic Statistics Class"
 subtitle: "UC Berkeley, Spring 2024"
 listing:
   - id: schedule
@@ -22,21 +22,8 @@ This is this week's announcement.
 
 ## Schedule
 
-Note: DS100 uses templating to fill out the schedule. Here we use Quarto's EJS templating.
-
-
-### A templated schedule
-
-The templating is basically working in terms of filling in values in the schedule.ejs file based on a schedule.yml file. 
+Here we use Quarto's EJS templating.
 
 ::: {#schedule}
 :::
 
-
-### Test of templating md
-
-This doesn't seem to work.
-
-
-::: {#test}
-:::
