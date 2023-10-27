@@ -32,9 +32,9 @@ The site is rendered at [https://berkeley-scf.github.io/stat999-quarto](https://
 These instructions have been tested under MacOS.
 
 Current problems/questions:
-  - **Use this template** only available if logged in to GitHub. Not sure if it will be available to someone else who is logged in.
-  - What format should we use for class repo names for individual semesters.
-  - What github.com or github.b.e account should instructors use. Perhaps github.com/berkeley-stat or g.h.b/berkeley-stat or g.b.e/statistics
+  - **Use this template** is only available if logged in to GitHub. Not sure if it will be available to someone else who is logged in.
+  - What format should we use for class repo names for individual semesters, e.g., stat555-sp24, stat555-spring-2024, etc..
+  - What github.com or github.b.e account should instructors use? Perhaps github.com/berkeley-stat or github.b.e/berkeley-stat or github.b.e/statistics
 
 1. Install [Quarto](https://quarto.org/docs/get-started) for Mac, Windows, or Linux.
 
@@ -81,7 +81,7 @@ Current problems/questions:
       git push
       ```
 
-    If you modify an existing file, you can either do `git add currentfile.md` or include the `-a` flag when you run `git commit` to automatically update files that Git is already keeping track of, e.g., `git commit -am "Updated Unit 7"`.
+    If you modify an existing file, you can either do `git add currentfile.md` or include the `-a` flag when you run `git commit` to automatically update files that Git is already keeping track of, e.g., after modifying unit 7 files, `git commit -am "Updated Unit 7"`.
       
 
 7. Next follow some preparatory steps to get your website configured ([as documented in the Quarto docs](https://quarto.org/docs/publishing/github-pages.html#publish-command)).
@@ -98,17 +98,17 @@ Current problems/questions:
          ```
        - Alternatively in your browser, go to `https://github.com/example/stat555/branches` and click on **New branch" and give it the name `gh-pages`.
 
-    - Check that the gh-pages branch as your "Source" under [Settings->Pages](github.com/example/stat555/settings/pages).
+    - Check that the `gh-pages` branch ais your source branch under [Settings->Pages->Branch](github.com/example/stat555/settings/pages).
 
 7. Run `quarto publish gh-pages` from the command line to push updates to the course website.
   - Hit <Y> when prompted to "Update site at https://example.github.io/stat555/? ".
-  - Wait a few minutes for the content to be rendered and copied to the GitHub Pages site.
+  - Wait a minute for the content to be rendered on your computer. You should then see a message about updating files in the `gh-pages` branch.
+  - Wait a minute for the content to be copied to the GitHub Pages site.
   - You can monitor the site building process at `https://github.com/example/stat555/actions`.
-  - If there are no problems, your website will be publicly available at https://example.github.io/stat555 (this might be `github.com/berkeley-stat/stat555-<semester>` or `github.berkeley.edu/statistics`).
+  - If there are no problems, your website will be publicly available at https://example.github.io/stat555. Once Step 10 below is done, it should be available at the standardized location.
 
-8. As you make changes, you can continue to run `quarto publish`. The publishing process saves the rendered files for the webpage to the `gh-pages` branch of your repository. You will also want to save the source files in the `main` (default) branch of your repository.
+8. As you make changes, you can continue to run `quarto publish gh-pages`. The publishing process saves the rendered files for the webpage to the `gh-pages` branch of your repository. You will also want to regularly save (i.e., commit any changes to) the source files in the `main` (default) branch of your repository (Step 6).
 
-
-10. We will work with you to give your website a friendly URL in a department-standardized format, such as https://stat555.berkeley.edu. Just let us know when your website is ready.
+9. We will work with you to give your website a friendly URL in a department-standardized format, such as https://stat555.berkeley.edu. Just let us know when your website is ready.
 
 The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/computing/how-get-help) if you are a Berkeley Statistics instructor and you run into problems or questions.
