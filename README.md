@@ -13,10 +13,11 @@ The site is rendered at [https://berkeley-scf.github.io/stat999-quarto](https://
    - Include LaTeX (including LaTeX macros) for mathematical notation.
    - Include code chunks that are dynamically evaluated and whose output is included in the document (qmd or ipynb files only).
    - Include external webpages (such as Google calendars) as iframes within a page.
-- Quarto features:
-   - Quarto provides various nice features (callouts, tabsets, code folding), etc.
-   - At the same time one can embed raw HTML for full flexibility.
-   - One can use HTML templates  to dynamically populate HTML elements with data from plain text data files (in yml format).
+   - Have documents be rendered to HTML or PDF (the latter for documents that students will download).
+- Quarto features include:
+   - Various nice features such as callouts, tabsets, code folding, etc.
+   - The ability to embed raw HTML for full flexibility when your output is HTML (but not PDF), including styling using CSS.
+   - The ability to dynamically populate HTML elements with data from plain text data files (in yml format).
    
 
 ## How to use this GitHub template
@@ -57,6 +58,7 @@ Current problems/questions:
 
 4. Begin making changes relevant to your course. 
    - Modify the site's metadata and table of contents in `_quarto.yml` to reflect the structure you want.
+     - Modify the link at `website->tools->href` to point to your GitHub repository rather than the template repository (or remove the GitHub link altogether; it shows up under the website logo and above the search bar in the upper left of the site.
    - Update `README.md` to remove all the instructions we provide (i.e., this text you are reading!).
    - Edit the other Markdown (or Quarto Markdown) files in the working directory and add files as desired.
      - You can make use of various Quarto features discussed in the [Quarto docs](https://quarto.org/docs/authoring).
@@ -66,7 +68,7 @@ Current problems/questions:
 
    - You can leave the preview running as you make changes to the source files; saving changes to the source files will generally (with a few exceptions, such as .ejs files) will be reflected live in your browser.
 
-   - You can also run `quarto render` to create the html (in the `_site` directory) without automatically displaying it. Or `quarto render file.qmd` to just render a single file. 
+   - You can also run `quarto render` to create the HTML (in the `_site` directory) without automatically displaying it. Or `quarto render file.qmd` to just render a single file. 
       - Note that you shouldn't commit the files in `_site` to your repository as they will be frequently regenerated and having them in the repository can complicate matters.
       
 6. Update your repository with the changes to your source files.
@@ -91,24 +93,24 @@ Current problems/questions:
        - From the command line
          ```
          git checkout --orphan gh-pages
-         git reset --hard # make sure all changes are committed before running this (see step 5 above)!
+         git reset --hard # make sure all changes are committed before running this (step 5 above)!
          git commit --allow-empty -m "Initializing gh-pages branch"
          git push origin gh-pages
          git checkout main
          ```
-       - Alternatively in your browser, go to `https://github.com/example/stat555/branches` and click on **New branch" and give it the name `gh-pages`.
+       - Alternatively in your browser, go to `https://github.com/example/stat555/branches` and click on **New branch** and give it the name `gh-pages`.
 
-    - Check that the `gh-pages` branch ais your source branch under [Settings->Pages->Branch](github.com/example/stat555/settings/pages).
+    - Check that the `gh-pages` branch is your source branch under `Settings->Pages->Branch`, e.g., `github.com/example/stat555/settings/pages`.
 
-7. Run `quarto publish gh-pages` from the command line to push updates to the course website.
-  - Hit <Y> when prompted to "Update site at https://example.github.io/stat555/? ".
-  - Wait a minute for the content to be rendered on your computer. You should then see a message about updating files in the `gh-pages` branch.
-  - Wait a minute for the content to be copied to the GitHub Pages site.
-  - You can monitor the site building process at `https://github.com/example/stat555/actions`.
-  - If there are no problems, your website will be publicly available at https://example.github.io/stat555. Once Step 10 below is done, it should be available at the standardized location.
+8. Run `quarto publish gh-pages` from the command line to push updates to the course website.
+   - Hit `Y` when prompted to "Update site at https://example.github.io/stat555/? ".
+   - Wait a minute for the content to be rendered on your computer. You should then see a message that files are being updated in the `gh-pages` branch.
+   - Wait a minute for the content to be copied to the GitHub Pages site.
+   - You can monitor the site building process at `https://github.com/example/stat555/actions`.
+   - If there are no problems, your website will be publicly available at https://example.github.io/stat555. Once Step 10 below is done, it should also be available at the standardized location.
 
-8. As you make changes, you can continue to run `quarto publish gh-pages`. The publishing process saves the rendered files for the webpage to the `gh-pages` branch of your repository. You will also want to regularly save (i.e., commit any changes to) the source files in the `main` (default) branch of your repository (Step 6).
+9. As you make changes, you can continue to run `quarto publish gh-pages`. The publishing process saves the rendered files for the webpage to the `gh-pages` branch of your repository. You will also want to regularly save (i.e., commit any changes to) the source files in the `main` (default) branch of your repository (Step 6).
 
-9. We will work with you to give your website a friendly URL in a department-standardized format, such as https://stat555.berkeley.edu. Just let us know when your website is ready.
+10. We will work with you to give your website a friendly URL in a department-standardized format, such as https://stat555.berkeley.edu. Just let us know when your website is ready.
 
 The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/computing/how-get-help) if you are a Berkeley Statistics instructor and you run into problems or questions.
