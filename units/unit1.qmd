@@ -11,12 +11,17 @@ format:
 This is an example of using qmd as the source document.
 
 
-## Evaluated Python code chunk
+## Evaluated Python code chunk, with a plot
 
 ```{python}
 import numpy as np
-np.mean(np.random.normal(size=100))
+x = np.random.normal(size=100)
+import matplotlib.pyplot as plt
+plt.hist(x)
+plt.show()
+np.mean(x)
 ```
+
 
 ## $\LaTeX$
 
