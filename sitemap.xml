@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://berkeley-scf.github.io/stat999-quarto/about.html</loc>
-    <lastmod>2023-10-26T21:56:17.897Z</lastmod>
-  </url>
-  <url>
-    <loc>https://berkeley-scf.github.io/stat999-quarto/units/unit3.html</loc>
-    <lastmod>2023-10-26T21:56:17.181Z</lastmod>
-  </url>
-  <url>
-    <loc>https://berkeley-scf.github.io/stat999-quarto/units/macros.html</loc>
-    <lastmod>2023-10-26T21:55:38.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://berkeley-scf.github.io/stat999-quarto/index.html</loc>
-    <lastmod>2023-10-26T21:55:04.401Z</lastmod>
-  </url>
-  <url>
-    <loc>https://berkeley-scf.github.io/stat999-quarto/syllabus.html</loc>
-    <lastmod>2023-10-26T21:55:03.637Z</lastmod>
-  </url>
-  <url>
-    <loc>https://berkeley-scf.github.io/stat999-quarto/data.html</loc>
-    <lastmod>2023-10-26T21:55:03.941Z</lastmod>
-  </url>
-  <url>
-    <loc>https://berkeley-scf.github.io/stat999-quarto/units/unit1.html</loc>
-    <lastmod>2023-10-26T21:55:37.929Z</lastmod>
+    <loc>https://berkeley-scf.github.io/stat999-quarto/calendar.html</loc>
+    <lastmod>2023-11-06T22:41:22.958Z</lastmod>
   </url>
   <url>
     <loc>https://berkeley-scf.github.io/stat999-quarto/units/unit2.html</loc>
-    <lastmod>2023-10-26T21:55:39.209Z</lastmod>
+    <lastmod>2023-11-06T22:41:08.442Z</lastmod>
   </url>
   <url>
-    <loc>https://berkeley-scf.github.io/stat999-quarto/calendar.html</loc>
-    <lastmod>2023-10-26T21:56:17.577Z</lastmod>
+    <loc>https://berkeley-scf.github.io/stat999-quarto/units/unit1.html</loc>
+    <lastmod>2023-11-06T22:41:07.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://berkeley-scf.github.io/stat999-quarto/data.html</loc>
+    <lastmod>2023-11-06T22:41:00.346Z</lastmod>
+  </url>
+  <url>
+    <loc>https://berkeley-scf.github.io/stat999-quarto/syllabus.html</loc>
+    <lastmod>2023-11-06T22:41:00.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://berkeley-scf.github.io/stat999-quarto/index.html</loc>
+    <lastmod>2023-11-06T22:41:00.910Z</lastmod>
+  </url>
+  <url>
+    <loc>https://berkeley-scf.github.io/stat999-quarto/units/macros.html</loc>
+    <lastmod>2023-11-06T22:41:07.762Z</lastmod>
+  </url>
+  <url>
+    <loc>https://berkeley-scf.github.io/stat999-quarto/units/unit3.html</loc>
+    <lastmod>2023-11-06T22:41:22.678Z</lastmod>
   </url>
 </urlset>

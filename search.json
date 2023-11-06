@@ -1,94 +1,38 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "calendar.html",
+    "href": "calendar.html",
+    "title": "Calendar",
     "section": "",
-    "text": "About this site"
+    "text": "We can just embed the iframe html:"
   },
   {
-    "objectID": "units/unit3.html",
-    "href": "units/unit3.html",
-    "title": "Unit 3: More",
+    "objectID": "units/unit2.html",
+    "href": "units/unit2.html",
+    "title": "Unit 2: Next",
     "section": "",
-    "text": "This is an example of using qmd as the source document with pdf as one target. I’ve taken out the qmd stuff that doesn’t seem to render to pdf."
+    "text": "This is an example of using an ipynb file as source rather than qmd. It follows instructions from https://github.com/DS-100/course-notes/README.md."
   },
   {
-    "objectID": "units/unit3.html#evaluated-python-code-chunk",
-    "href": "units/unit3.html#evaluated-python-code-chunk",
-    "title": "Unit 3: More",
-    "section": "Evaluated Python code chunk",
-    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n-0.005829836663116365"
+    "objectID": "units/unit2.html#latex",
+    "href": "units/unit2.html#latex",
+    "title": "Unit 2: Next",
+    "section": "\\(\\LaTeX\\)",
+    "text": "\\(\\LaTeX\\)\nHere is some \\(\\LaTeX\\). \\[\n\\theta = 7\n\\]"
   },
   {
-    "objectID": "units/unit3.html#latex",
-    "href": "units/unit3.html#latex",
-    "title": "Unit 3: More",
-    "section": "LaTeX",
-    "text": "LaTeX\n\\[\n\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n\\]"
+    "objectID": "units/unit2.html#evaluated-python-code",
+    "href": "units/unit2.html#evaluated-python-code",
+    "title": "Unit 2: Next",
+    "section": "Evaluated Python code",
+    "text": "Evaluated Python code\nNote that to get code output shown, the underlying notebook must have executed the code.\n\n\nCode\na=7\nprint(a)\n\n\n7"
   },
   {
-    "objectID": "units/unit3.html#latex-macro",
-    "href": "units/unit3.html#latex-macro",
-    "title": "Unit 3: More",
-    "section": "LaTeX macro",
-    "text": "LaTeX macro\n\nWarning: need to look back at this as having include-before-body in the yaml causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]"
-  },
-  {
-    "objectID": "units/macros.html",
-    "href": "units/macros.html",
-    "title": "",
-    "section": "",
-    "text": "\\[\n\\newcommand{\\trans}{^\\mathsf{T}}\n\\newcommand{\\eps}{\\epsilon}\n\\]"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Statistics 999: Generic Statistics Class",
-    "section": "",
-    "text": "Ed\n  DataHub\n  Gradescope\n\nNo matching items\nWe could provide a templated listing of instructors here (or on its own page), similar to DS100/fa23."
-  },
-  {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Statistics 999: Generic Statistics Class",
-    "section": "Schedule",
-    "text": "Schedule\nNote: DS100 uses templating to fill out the schedule. Here we use Quarto’s EJS templating.\n\nA templated schedule\nThe templating is basically working in terms of filling in values in the schedule.ejs file based on a schedule.yml file.\n\n\n   Week 1\n   \n   \n   \n   \n           \n           Aug 24:\n           Lecture 1 Introduction\n                Note 1\n           \n           \n           Participation 1 Lecture Participation 1\n                \n           \n           \n           Aug 25:\n           Lab 1 Prerequisite Coding (due Aug 29)\n                \n           \n           \n           Homework 1A Plotting and Permutation Test (due Aug 31)\n                \n           \n           \n           Homework 1B Prerequisite Math (due Aug 31)\n                \n           \n   \n   \n   Week 2\n   \n   \n   \n   \n           \n           Aug 29:\n           Lecture 2 Pandas 1\n                \n           \n           \n           Participation 2 Lecture Participation 2\n                Note 2\n           \n   \n   \n\nNo matching items\n\n\n\n\nTest of templating md\nThis doesn’t seem to work."
-  },
-  {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Jump to:"
-  },
-  {
-    "objectID": "syllabus.html#about-data-100",
-    "href": "syllabus.html#about-data-100",
-    "title": "Syllabus",
-    "section": "About Data 100",
-    "text": "About Data 100\nCombining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world. This intermediate level class bridges between Data 8 and upper division computer science and statistics courses as well as methods courses in other fields. In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​ Through a strong emphasis on data centric computing, quantitative critical thinking, and exploratory data analysis, this class covers key principles and techniques of data science. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.\n\nGoals\n\nPrepare students for advanced Berkeley courses in data-management, machine learning, and statistics, by providing the necessary foundation and context.\nEnable students to start careers as data scientists by providing experience working with real-world data, tools, and techniques.\nEmpower students to apply computational and inferential thinking to address real-world problems.\n\n\n\nPrerequisites\nWhile we are working to make this class widely accessible, we currently require the following (or equivalent) prerequisites. Prerequisites will be enforced in Data 100. It is your responsibility to know the material in the prerequisites."
-  },
-  {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Datasets",
-    "section": "",
-    "text": "We’ll use several real world datasets in class."
-  },
-  {
-    "objectID": "data.html#dataset-1",
-    "href": "data.html#dataset-1",
-    "title": "Datasets",
-    "section": "Dataset 1",
-    "text": "Dataset 1"
-  },
-  {
-    "objectID": "data.html#dataset-2",
-    "href": "data.html#dataset-2",
-    "title": "Datasets",
-    "section": "Dataset 2",
-    "text": "Dataset 2"
+    "objectID": "units/unit2.html#callout",
+    "href": "units/unit2.html#callout",
+    "title": "Unit 2: Next",
+    "section": "Callout",
+    "text": "Callout\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title."
   },
   {
     "objectID": "units/unit1.html",
@@ -98,11 +42,11 @@
     "text": "This is an example of using qmd as the source document."
   },
   {
-    "objectID": "units/unit1.html#evaluated-python-code-chunk",
-    "href": "units/unit1.html#evaluated-python-code-chunk",
+    "objectID": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
+    "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
-    "section": "Evaluated Python code chunk",
-    "text": "Evaluated Python code chunk\n\n\nCode\nimport numpy as np\nnp.mean(np.random.normal(size=100))\n\n\n-0.1187614333729452"
+    "section": "Evaluated Python code chunk, with a plot",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.25386101308089026"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -140,38 +84,87 @@
     "text": "Tabset\n\nRPython\n\n\nThis code is not executed.\nfizz_buzz &lt;- function(fbnums = 1:50) {\n  output &lt;- dplyr::case_when(\n    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n    fbnums %% 3 == 0 ~ \"Fizz\",\n    fbnums %% 5 == 0 ~ \"Buzz\",\n    TRUE ~ as.character(fbnums)\n  )\n  print(output)\n}\n\nfizz_buzz(3)\n\n\nThis code is executed.\n\n\nCode\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)\n    \nfizz_buzz(3)\n\n\nFizz"
   },
   {
-    "objectID": "units/unit2.html",
-    "href": "units/unit2.html",
-    "title": "Unit 2: Next",
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Datasets",
     "section": "",
-    "text": "This is an example of using an ipynb file as source rather than qmd. It follows instructions from https://github.com/DS-100/course-notes/README.md."
+    "text": "We’ll use several real world datasets in class."
   },
   {
-    "objectID": "units/unit2.html#latex",
-    "href": "units/unit2.html#latex",
-    "title": "Unit 2: Next",
-    "section": "\\(\\LaTeX\\)",
-    "text": "\\(\\LaTeX\\)\nHere is some \\(\\LaTeX\\). \\[\n\\theta = 7\n\\]"
+    "objectID": "data.html#dataset-1",
+    "href": "data.html#dataset-1",
+    "title": "Datasets",
+    "section": "Dataset 1",
+    "text": "Dataset 1"
   },
   {
-    "objectID": "units/unit2.html#evaluated-python-code",
-    "href": "units/unit2.html#evaluated-python-code",
-    "title": "Unit 2: Next",
-    "section": "Evaluated Python code",
-    "text": "Evaluated Python code\nNote that to get code output shown, the underlying notebook must have executed the code.\n\n\nCode\na=7\nprint(a)\n\n\n7"
+    "objectID": "data.html#dataset-2",
+    "href": "data.html#dataset-2",
+    "title": "Datasets",
+    "section": "Dataset 2",
+    "text": "Dataset 2"
   },
   {
-    "objectID": "units/unit2.html#callout",
-    "href": "units/unit2.html#callout",
-    "title": "Unit 2: Next",
-    "section": "Callout",
-    "text": "Callout\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title."
-  },
-  {
-    "objectID": "calendar.html",
-    "href": "calendar.html",
-    "title": "Calendar",
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
     "section": "",
-    "text": "We can just embed the iframe html:"
+    "text": "Jump to:"
+  },
+  {
+    "objectID": "syllabus.html#about-data-100",
+    "href": "syllabus.html#about-data-100",
+    "title": "Syllabus",
+    "section": "About Data 100",
+    "text": "About Data 100\nCombining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world. This intermediate level class bridges between Data 8 and upper division computer science and statistics courses as well as methods courses in other fields. In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​ Through a strong emphasis on data centric computing, quantitative critical thinking, and exploratory data analysis, this class covers key principles and techniques of data science. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.\n\nGoals\n\nPrepare students for advanced Berkeley courses in data-management, machine learning, and statistics, by providing the necessary foundation and context.\nEnable students to start careers as data scientists by providing experience working with real-world data, tools, and techniques.\nEmpower students to apply computational and inferential thinking to address real-world problems.\n\n\n\nPrerequisites\nWhile we are working to make this class widely accessible, we currently require the following (or equivalent) prerequisites. Prerequisites will be enforced in Data 100. It is your responsibility to know the material in the prerequisites."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistics 999: Generic Statistics Class",
+    "section": "",
+    "text": "Ed\n  DataHub\n  Gradescope\n\nNo matching items\nWe could provide a templated listing of instructors here (or on its own page), similar to DS100/fa23."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Statistics 999: Generic Statistics Class",
+    "section": "Schedule",
+    "text": "Schedule\nHere we use Quarto’s EJS templating.\n\n\n   Week 1\n   \n   \n   \n   \n           \n           Aug 24:\n           Lecture 1 Introduction\n                Note 1\n           \n           \n           Participation 1 Lecture Participation 1\n                \n           \n           \n           Aug 25:\n           Lab 1 Prerequisite Coding (due Aug 29)\n                \n           \n           \n           Homework 1A Plotting and Permutation Test (due Aug 31)\n                \n           \n           \n           Homework 1B Prerequisite Math (due Aug 31)\n                \n           \n   \n   \n   Week 2\n   \n   \n   \n   \n           \n           Aug 29:\n           Lecture 2 Pandas 1\n                \n           \n           \n           Participation 2 Lecture Participation 2\n                Note 2\n           \n   \n   \n\nNo matching items"
+  },
+  {
+    "objectID": "units/macros.html",
+    "href": "units/macros.html",
+    "title": "",
+    "section": "",
+    "text": "\\[\n\\newcommand{\\trans}{^\\mathsf{T}}\n\\newcommand{\\eps}{\\epsilon}\n\\]"
+  },
+  {
+    "objectID": "units/unit3.html",
+    "href": "units/unit3.html",
+    "title": "Unit 3: More",
+    "section": "",
+    "text": "This is an example of using qmd as the source document with pdf as one target. I’ve taken out the qmd stuff that doesn’t seem to render to pdf."
+  },
+  {
+    "objectID": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
+    "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
+    "title": "Unit 3: More",
+    "section": "Evaluated Python code chunk, with a plot",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.1059744037342954"
+  },
+  {
+    "objectID": "units/unit3.html#latex",
+    "href": "units/unit3.html#latex",
+    "title": "Unit 3: More",
+    "section": "LaTeX",
+    "text": "LaTeX\n\\[\n\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n\\]"
+  },
+  {
+    "objectID": "units/unit3.html#latex-macro",
+    "href": "units/unit3.html#latex-macro",
+    "title": "Unit 3: More",
+    "section": "LaTeX macro",
+    "text": "LaTeX macro\n\nWarning: need to look back at this as having include-before-body in the yaml causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]"
   }
 ]
