@@ -1,9 +1,9 @@
 ---
-title: "Datasets"
+title: "Data"
 ---
 
-We'll use several real world datasets in class.
+We'll use data from several real world situations in class.
 
-## Dataset 1
+## Data 1
 
-## Dataset 2
+## Data 2
