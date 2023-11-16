@@ -47,7 +47,7 @@ stateDiagram-v2
 
 Another method involves course staff forking the class repo into their own GitHub account. They would then make pull requests in the class repo, and following feedback, discussion, alterations, etc., authorized staff could merge the PRs. This gives the instructor or repo admin a bit more control over changes.
 
-For example, given the instructor with github handle `@paciorek` and the shared class repo https://github.com/berkeley-stat555/fall-2024 :
+For example, given the instructor with GitHub handle `@paciorek` and the shared class repo https://github.com/berkeley-stat555/fall-2024 :
 
 ```mermaid
 %% State diagram documentation at
@@ -112,7 +112,7 @@ These instructions have been tested under MacOS.
    git push
    ```
 
-### Preview Changes
+### Preview Changes (Optional)
 
 If you want to preview the website locally on your own computer before they go live, follow these instructions. It is not strictly necessary, but we recommend doing so to spot errors. If you are confident that your changes will not break anything (for example for quick fixes), you can skip this section.
 
@@ -172,12 +172,11 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
    
    h. Modify the link at `website->tools->href` to point to the GitHub repository for the class, rather than the template repository (or remove the GitHub link altogether; it shows up under the website logo and above the search bar in the upper left of the site.
 
-1. Enable GitHub Pages in the repository. Go to Settings > Pages > Source > GitHub Actions (Beta). Because a github action is contained within the template, it will run when the template is instantiated and may fail until this step is completed.
+1. Enable GitHub Pages in the repository. Go to Settings > Pages > Source > GitHub Actions (Beta). Because a GitHub action is contained within the template, it will run when the template is instantiated and may fail until this step is completed.
 
 ### README Content for Actual Class Repositories
 
 This is the repository for the course website and course material for Statistics 555 for Fall 2024. 
-The website for which this content is the source materials is available at
-`stat555.berkeley.edu/fall-2024`.
+The website for which this content is the source materials is available at <https://stat555.berkeley.edu/fall-2024>.
 
 For instructors: please see [these instructions](https://github.com/berkeley-scf/stat999-quarto#instructions-for-course-staff) on how to use this repository.
