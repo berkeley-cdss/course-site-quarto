@@ -46,7 +46,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.2880794815109894"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.06841813647632415"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -151,7 +151,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.09955680553907985"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.14378785045458362"
   },
   {
     "objectID": "units/unit3.html#latex",
