@@ -10,6 +10,7 @@ listing:
     contents: buttons.yml
   - id: test
     contents: units
+    type: table
 ---
 
 ::: {#buttons}
@@ -17,8 +18,11 @@ listing:
 
 We could provide a templated listing of instructors here (or on its own page), similar to [DS100/fa23](https://github.com/DS-100/fa23).
 
-::: {.callout-note title="Announcement"}
-This is this week's announcement.
+::: {.callout-note title="Welcome to Week 1 of Stat 999"}
+:::
+
+::: {.callout-note title="Welcome to Week 2"}
+Things are picking up now.
 :::
 
 ## Schedule
