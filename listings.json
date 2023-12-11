@@ -1,11 +1,6 @@
 [
   {
     "listing": "/index.html",
-    "items": [
-      "/units/unit1.html",
-      "/units/unit2.html",
-      "/units/unit3.html",
-      "/units/macros.html"
-    ]
+    "items": []
   }
 ]
