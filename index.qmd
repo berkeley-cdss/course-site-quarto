@@ -8,9 +8,6 @@ listing:
   - id: buttons
     template: buttons.ejs
     contents: buttons.yml
-  - id: test
-    contents: units
-    type: table
 ---
 
 ::: {#buttons}
