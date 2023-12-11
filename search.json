@@ -46,7 +46,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.06841813647632415"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.10791574186099749"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -123,7 +123,7 @@
     "href": "index.html",
     "title": "Statistics 999: Generic Statistics Class",
     "section": "",
-    "text": "Ed\n  DataHub\n  Gradescope\n\nNo matching items\nWe could provide a templated listing of instructors here (or on its own page), similar to DS100/fa23."
+    "text": "Ed\n  DataHub\n  Gradescope\n\nNo matching items\nWe could provide a templated listing of instructors here (or on its own page), similar to DS100/fa23.\n::: {.callout-note title=“Welcome again} It’s week 15. :::"
   },
   {
     "objectID": "index.html#schedule",
@@ -151,7 +151,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.14378785045458362"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.061708821330955274"
   },
   {
     "objectID": "units/unit3.html#latex",
