@@ -11,7 +11,7 @@
     "href": "units/unit2.html",
     "title": "Unit 2: Next",
     "section": "",
-    "text": "This is an example of using an ipynb file as source rather than qmd. It follows instructions from https://github.com/DS-100/course-notes/README.md."
+    "text": "This is an example of using an ipynb file as source rather than qmd. It follows instructions from https://github.com/DS-100/course-notes/README.md.\nLink to the data."
   },
   {
     "objectID": "units/unit2.html#latex",
@@ -46,7 +46,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.06021409314246446"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.0920384063968349"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -151,7 +151,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.07774854920361257"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.14571366001985703"
   },
   {
     "objectID": "units/unit3.html#latex",
