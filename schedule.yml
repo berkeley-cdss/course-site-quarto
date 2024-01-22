@@ -8,7 +8,7 @@
           href: "./test.pdf"
           auxil:
             id: "Note 1"
-            href: "./unit1.html"
+            href: "./units/unit1.html"
         - type: "Participation"
           id: "1"
           name: Lecture Participation 1
@@ -41,4 +41,4 @@
           href: "https://ds100.org/fa23/lecture/lec01"
           auxil:
             id: "Note 2"
-            href: "./unit2.html"
+            href: "./units/unit2.html"
