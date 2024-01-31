@@ -46,7 +46,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.030115744329645068"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.09855508833366436"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -123,14 +123,14 @@
     "href": "index.html",
     "title": "Statistics 999: Generic Statistics Class",
     "section": "",
-    "text": "Ed\n  DataHub\n  Gradescope\n\nNo matching items\nWe could provide a templated listing of instructors here (or on its own page), similar to DS100/fa23."
+    "text": "Ed\nDataHub\nGradescope\n\nNo matching items\nWe could provide a templated listing of instructors here (or on its own page), similar to DS100/fa23."
   },
   {
     "objectID": "index.html#schedule",
     "href": "index.html#schedule",
     "title": "Statistics 999: Generic Statistics Class",
     "section": "Schedule",
-    "text": "Schedule\nHere we use Quarto’s EJS templating.\n\n\n   Week 1\n   \n   \n   \n   \n           \n           Aug 24:\n           Lecture 1 Introduction\n                Note 1\n           \n           \n           Participation 1 Lecture Participation 1\n                \n           \n           \n           Aug 25:\n           Lab 1 Prerequisite Coding (due Aug 29)\n                \n           \n           \n           Homework 1A Plotting and Permutation Test (due Aug 31)\n                \n           \n           \n           Homework 1B Prerequisite Math (due Aug 31)\n                \n           \n   \n   \n   Week 2\n   \n   \n   \n   \n           \n           Aug 29:\n           Lecture 2 Pandas 1\n                \n           \n           \n           Participation 2 Lecture Participation 2\n                Note 2\n           \n   \n   \n\nNo matching items"
+    "text": "Schedule\nHere we use Quarto’s EJS templating.\n\n  Week 1\n  \n  \n    \n    Jan 16\n    \n    \n    Random Variables\n        Notes\n        Slides\n    \n    \n    \n    Jan 18\n    \n    \n    The Binomial Distribution\n        Notes\n        Slides\n    \n    \n  \n  \n  Resources\n  \n      Markdown Live Preview\n  \n  \n  \n  Week 2\n  \n  \n    \n    Jan 23\n    \n    \n    Conditional Probability\n        Notes\n        Slides\n        PS\n    \n    \n  \n  \n  Resources\n  \n    None this week\n  \n  \n  \n\nNo matching items"
   },
   {
     "objectID": "units/macros.html",
@@ -151,7 +151,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.10837499998307795"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.06355939408070736"
   },
   {
     "objectID": "units/unit3.html#latex",

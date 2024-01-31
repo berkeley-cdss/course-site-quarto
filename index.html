@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-week','listing-days',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-week','listing-days','listing-resources',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-week","listing-days"],
+      searchColumns: ["listing-week","listing-days","listing-resources"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -122,7 +122,6 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -149,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./stat_bear.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./assets/stat_bear.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/berkeley-scf/stat999-quarto" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
@@ -251,9 +250,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div id="listing-buttons" class="quarto-listing quarto-listing-container-custom">
-  <button style="background-color: purple;"><a href="https://ibm.com">Ed</a></button>
-  <button style="background-color: green;"><a href="https://ibm.com">DataHub</a></button>
-  <button style="background-color: orange;"><a href="https://ibm.com">Gradescope</a></button>
+<a href="https://ibm.com" type="button" class="btn btn-outline-primary btn-sm">Ed</a>
+<a href="https://ibm.com" type="button" class="btn btn-outline-primary btn-sm">DataHub</a>
+<a href="https://ibm.com" type="button" class="btn btn-outline-primary btn-sm">Gradescope</a>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -289,52 +288,56 @@ Welcome to Week 2
 <h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
 <p>Here we use Quarto’s EJS templating.</p>
 <div id="listing-schedule" class="quarto-listing quarto-listing-container-custom">
-
-   <h4 class="anchored">Week 1</h4>
-   <table class="table" data-quarto-disable-processing="true">
-   <!-- 'table' class causes use of quarto styling for tables, seemingly from bootstrap.min.css -->
-   <!-- data-quarto-disable-processing="true" prevents Quarto processing of tables (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) -->
-   <tbody>
-           <tr>
-           <th scope="row" rowspan="2">Aug 24:</th>
-           <td><strong class="label label-Lecture">Lecture 1</strong> <a href="./test.pdf" target="_blank">Introduction</a></td>
-                <td><a href="./units/unit1.html">Note 1</a></td>
-           </tr>
-           <tr>
-           <td><strong class="label label-Participation">Participation 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 1</a></td>
-                <td></td>
-           </tr>
-           <tr>
-           <th scope="row" rowspan="3">Aug 25:</th>
-           <td><strong class="label label-Lab">Lab 1</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Coding (due Aug 29)</a></td>
-                <td></td>
-           </tr>
-           <tr>
-           <td><strong class="label label-Homework">Homework 1A</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Plotting and Permutation Test (due Aug 31)</a></td>
-                <td></td>
-           </tr>
-           <tr>
-           <td><strong class="label label-Homework">Homework 1B</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Prerequisite Math (due Aug 31)</a></td>
-                <td></td>
-           </tr>
-   </tbody>
-   </table>
-   <h4 class="anchored">Week 2</h4>
-   <table class="table" data-quarto-disable-processing="true">
-   <!-- 'table' class causes use of quarto styling for tables, seemingly from bootstrap.min.css -->
-   <!-- data-quarto-disable-processing="true" prevents Quarto processing of tables (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) -->
-   <tbody>
-           <tr>
-           <th scope="row" rowspan="2">Aug 29:</th>
-           <td><strong class="label label-Lecture">Lecture 2</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Pandas 1</a></td>
-                <td></td>
-           </tr>
-           <tr>
-           <td><strong class="label label-Participation">Participation 2</strong> <a href="https://ds100.org/fa23/lecture/lec01" target="_blank">Lecture Participation 2</a></td>
-                <td><a href="./units/unit2.html">Note 2</a></td>
-           </tr>
-   </tbody>
-   </table>
+  <h4 class="anchored">Week 1</h4>
+  <div class="week-x-box">
+  <div class="daily-sched">
+    <div class="date-cell">
+    <p>Jan 16</p>
+    </div>
+    <div class="materials-cell">
+    <p><span class="daily-topic">Random Variables</span><br>
+        <a href="1-probability/1-random-variables/notes.qmd" type="button" class="btn btn-outline-primary btn-sm">Notes</a>
+        <a href="1-probability/1-random-variables/slides.qmd" type="button" class="btn btn-outline-primary btn-sm">Slides</a>
+    </p>
+    </div>
+    <div class="date-cell">
+    <p>Jan 18</p>
+    </div>
+    <div class="materials-cell">
+    <p><span class="daily-topic">The Binomial Distribution</span><br>
+        <a href="1-probability/2-binomial/notes.qmd" type="button" class="btn btn-outline-primary btn-sm">Notes</a>
+        <a href="1-probability/2-binomial/slides.qmd" type="button" class="btn btn-outline-primary btn-sm">Slides</a>
+    </p>
+    </div>
+  </div>
+  <div class="resources">
+  <p><span">Resources</span"></p>
+  <ul>
+      <li><a href="https://markdownlivepreview.com">Markdown Live Preview</a></li>
+  </ul>
+  </div>
+  </div>
+  <h4 class="anchored">Week 2</h4>
+  <div class="week-x-box">
+  <div class="daily-sched">
+    <div class="date-cell">
+    <p>Jan 23</p>
+    </div>
+    <div class="materials-cell">
+    <p><span class="daily-topic">Conditional Probability</span><br>
+        <a href="1-probability/3-conditional-probability/notes.qmd" type="button" class="btn btn-outline-primary btn-sm">Notes</a>
+        <a href="1-probability/3-conditional-probability/slides.qmd" type="button" class="btn btn-outline-primary btn-sm">Slides</a>
+        <a href="1-probability/3-conditional-probability/ps.qmd" type="button" class="btn btn-outline-primary btn-sm">PS</a>
+    </p>
+    </div>
+  </div>
+  <div class="resources">
+  <p><span">Resources</span"></p>
+  <ul>
+    <li>None this week</li>
+  </ul>
+  </div>
+  </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
