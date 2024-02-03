@@ -46,7 +46,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.09855508833366436"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.16832550669534183"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -84,6 +84,34 @@
     "text": "Tabset\n\nRPython\n\n\nThis code is not executed.\nfizz_buzz &lt;- function(fbnums = 1:50) {\n  output &lt;- dplyr::case_when(\n    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n    fbnums %% 3 == 0 ~ \"Fizz\",\n    fbnums %% 5 == 0 ~ \"Buzz\",\n    TRUE ~ as.character(fbnums)\n  )\n  print(output)\n}\n\nfizz_buzz(3)\n\n\nThis code is executed.\n\n\nCode\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)\n    \nfizz_buzz(3)\n\n\nFizz"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistics 999: Generic Statistics Class",
+    "section": "",
+    "text": "Ed\n  DataHub\n  Gradescope\n\nNo matching items\nWe could provide a templated listing of instructors here (or on its own page), similar to DS100/fa23."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Statistics 999: Generic Statistics Class",
+    "section": "Schedule",
+    "text": "Schedule\nHere we use Quarto’s EJS templating.\n\n\n   Week 1\n   \n   \n   \n   \n           \n           Aug 24:\n           Lecture 1 Introduction\n                Note 1\n           \n           \n           Participation 1 Lecture Participation 1\n                \n           \n           \n           Aug 25:\n           Lab 1 Prerequisite Coding (due Aug 29)\n                \n           \n           \n           Homework 1A Plotting and Permutation Test (due Aug 31)\n                \n           \n           \n           Homework 1B Prerequisite Math (due Aug 31)\n                \n           \n   \n   \n   Week 2\n   \n   \n   \n   \n           \n           Aug 29:\n           Lecture 2 Pandas 1\n                \n           \n           \n           Participation 2 Lecture Participation 2\n                Note 2\n           \n   \n   \n\nNo matching items"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Jump to:"
+  },
+  {
+    "objectID": "syllabus.html#about-data-100",
+    "href": "syllabus.html#about-data-100",
+    "title": "Syllabus",
+    "section": "About Data 100",
+    "text": "About Data 100\nCombining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world. This intermediate level class bridges between Data 8 and upper division computer science and statistics courses as well as methods courses in other fields. In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​ Through a strong emphasis on data centric computing, quantitative critical thinking, and exploratory data analysis, this class covers key principles and techniques of data science. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.\n\nGoals\n\nPrepare students for advanced Berkeley courses in data-management, machine learning, and statistics, by providing the necessary foundation and context.\nEnable students to start careers as data scientists by providing experience working with real-world data, tools, and techniques.\nEmpower students to apply computational and inferential thinking to address real-world problems.\n\n\n\nPrerequisites\nWhile we are working to make this class widely accessible, we currently require the following (or equivalent) prerequisites. Prerequisites will be enforced in Data 100. It is your responsibility to know the material in the prerequisites."
+  },
+  {
     "objectID": "data.html",
     "href": "data.html",
     "title": "Data",
@@ -105,32 +133,11 @@
     "text": "Data 2"
   },
   {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
+    "objectID": "schedule-alt.html",
+    "href": "schedule-alt.html",
+    "title": "Alternative Schedule",
     "section": "",
-    "text": "Jump to:"
-  },
-  {
-    "objectID": "syllabus.html#about-data-100",
-    "href": "syllabus.html#about-data-100",
-    "title": "Syllabus",
-    "section": "About Data 100",
-    "text": "About Data 100\nCombining data, computation, and inferential thinking, data science is redefining how people and organizations solve challenging problems and understand their world. This intermediate level class bridges between Data 8 and upper division computer science and statistics courses as well as methods courses in other fields. In this class, we explore key areas of data science including question formulation, data collection and cleaning, visualization, statistical inference, predictive modeling, and decision making.​ Through a strong emphasis on data centric computing, quantitative critical thinking, and exploratory data analysis, this class covers key principles and techniques of data science. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.\n\nGoals\n\nPrepare students for advanced Berkeley courses in data-management, machine learning, and statistics, by providing the necessary foundation and context.\nEnable students to start careers as data scientists by providing experience working with real-world data, tools, and techniques.\nEmpower students to apply computational and inferential thinking to address real-world problems.\n\n\n\nPrerequisites\nWhile we are working to make this class widely accessible, we currently require the following (or equivalent) prerequisites. Prerequisites will be enforced in Data 100. It is your responsibility to know the material in the prerequisites."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Statistics 999: Generic Statistics Class",
-    "section": "",
-    "text": "Ed\nDataHub\nGradescope\n\nNo matching items\nWe could provide a templated listing of instructors here (or on its own page), similar to DS100/fa23."
-  },
-  {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Statistics 999: Generic Statistics Class",
-    "section": "Schedule",
-    "text": "Schedule\nHere we use Quarto’s EJS templating.\n\n  Week 1\n  \n  \n    \n    Jan 16\n    \n    \n    Random Variables\n        Notes\n        Slides\n    \n    \n    \n    Jan 18\n    \n    \n    The Binomial Distribution\n        Notes\n        Slides\n    \n    \n  \n  \n  Resources\n  \n      Markdown Live Preview\n  \n  \n  \n  Week 2\n  \n  \n    \n    Jan 23\n    \n    \n    Conditional Probability\n        Notes\n        Slides\n        PS\n    \n    \n  \n  \n  Resources\n  \n    None this week\n  \n  \n  \n\nNo matching items"
+    "text": "Ed\nDataHub\nGradescope\n\nNo matching items\n\n\n\n  Week 1\n  \n  \n    \n    Jan 16\n    \n    \n    Random Variables\n        Notes\n        Slides\n    \n    \n    \n    Jan 18\n    \n    \n    The Binomial Distribution\n        Notes\n        Slides\n    \n    \n  \n  \n  Resources\n  \n      Markdown Live Preview\n  \n  \n  \n  Week 2\n  \n  \n    \n    Jan 23\n    \n    \n    Conditional Probability\n        Notes\n        Slides\n        PS\n    \n    \n  \n  \n  Resources\n  \n    None this week\n  \n  \n  \n\nNo matching items"
   },
   {
     "objectID": "units/macros.html",
@@ -151,7 +158,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n0.06355939408070736"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n-0.020885650049691146"
   },
   {
     "objectID": "units/unit3.html#latex",
