@@ -1,0 +1,23 @@
+---
+title: "Alternative Schedule Format"
+listing:
+  - id: schedule-alt
+    template: schedule-alt.ejs
+    contents: schedule-alt.yml
+  - id: buttons-alt
+    template: buttons-alt.ejs
+    contents: buttons-alt.yml
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+---
+
+::: {#buttons-alt}
+:::
+
+Here we use Quarto's EJS templating.
+
+::: {#schedule-alt}
+:::
+

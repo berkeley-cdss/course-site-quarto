@@ -22,6 +22,8 @@ website:
           - units/unit3.qmd
       - href: data.qmd
         text: Datasets
+      - href: schedule-alt.qmd
+        text: Alternative Schedule
           
 
 format:

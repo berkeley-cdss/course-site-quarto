@@ -6,8 +6,8 @@ listing:
     template: assets/schedule.ejs
     contents: assets/schedule.yml
   - id: buttons
-    template: buttons.ejs
-    contents: buttons.yml
+    template: assets/buttons.ejs
+    contents: assets/buttons.yml
 ---
 
 ::: {#buttons}

@@ -1,0 +1,9 @@
+- button: Ed
+  link: https://statistics.berkeley.edu
+  color: purple
+- button: Gradescope
+  link: https://statistics.berkeley.edu
+  color: orange
+- button: DataHub
+  link: https://statistics.berkeley.edu
+  color: green
