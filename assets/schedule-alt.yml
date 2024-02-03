@@ -1,0 +1,39 @@
+- week: 1
+  days:
+    - display-date: Jan 16
+      date: 1/16/24
+      topic: Random Variables
+      items:
+        - type: Notes
+          href: 1-probability/1-random-variables/notes.qmd
+          publish: true
+        - type: Slides
+          href: 1-probability/1-random-variables/slides.qmd
+          publish: true
+    - display-date: Jan 18
+      date: 1/18/24
+      topic: The Binomial Distribution
+      items:
+        - type: Notes
+          href: 1-probability/2-binomial/notes.qmd
+          publish: true
+        - type: Slides
+          href: 1-probability/2-binomial/slides.qmd
+          publish: true
+  resources:
+    - '<a href="https://markdownlivepreview.com">Markdown Live Preview</a>'
+- week: 2
+  days:
+    - display-date: Jan 23
+      date: 1/23/24
+      topic: Conditional Probability
+      items:
+        - type: Notes
+          href: 1-probability/3-conditional-probability/notes.qmd
+          publish: true
+        - type: Slides
+          href: 1-probability/3-conditional-probability/slides.qmd
+          publish: true
+        - type: PS
+          href: 1-probability/3-conditional-probability/ps.qmd
+          publish: true

@@ -4,13 +4,16 @@ project:
 website:
   sidebar:
     style: docked
-    logo: stat_bear.png
+    title: "Stat 999"
+    logo: assets/stat_bear.png
     tools:
       - icon: github
         href: https://github.com/berkeley-scf/stat999-quarto
     contents:
       - href: index.qmd
         text: Home / Schedule
+      - href: schedule-alt.qmd
+        text: (Alternative Schedule)
       - href: syllabus.qmd
         text: Syllabus
       - href: calendar.qmd
@@ -27,7 +30,7 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
+    css: assets/styles.css
     toc: true
 
 
