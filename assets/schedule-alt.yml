@@ -5,20 +5,20 @@
       topic: Random Variables
       items:
         - type: Notes
-          href: 1-probability/1-random-variables/notes.qmd
+          href: units/unit1.qmd
           publish: true
         - type: Slides
-          href: 1-probability/1-random-variables/slides.qmd
+          href: units/unit1.qmd
           publish: true
     - display-date: Jan 18
       date: 1/18/24
       topic: The Binomial Distribution
       items:
         - type: Notes
-          href: 1-probability/2-binomial/notes.qmd
+          href: units/unit1.qmd
           publish: true
         - type: Slides
-          href: 1-probability/2-binomial/slides.qmd
+          href: units/unit1.qmd
           publish: true
   resources:
     - '<a href="https://markdownlivepreview.com">Markdown Live Preview</a>'
@@ -29,11 +29,11 @@
       topic: Conditional Probability
       items:
         - type: Notes
-          href: 1-probability/3-conditional-probability/notes.qmd
+          href: units/unit1.qmd
           publish: true
         - type: Slides
-          href: 1-probability/3-conditional-probability/slides.qmd
+          href: units/unit1.qmd
           publish: true
         - type: PS
-          href: 1-probability/3-conditional-probability/ps.qmd
+          href: units/unit1.qmd
           publish: true

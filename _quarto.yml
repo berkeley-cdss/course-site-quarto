@@ -12,8 +12,6 @@ website:
     contents:
       - href: index.qmd
         text: Home / Schedule
-      - href: schedule-alt.qmd
-        text: (Alternative Schedule)
       - href: syllabus.qmd
         text: Syllabus
       - href: calendar.qmd

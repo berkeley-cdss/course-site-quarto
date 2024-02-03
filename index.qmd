@@ -26,6 +26,8 @@ Things are picking up now.
 
 Here we use Quarto's EJS templating.
 
+For a style similar to that of [Stat 20](https://stat20.org), modify `index.qmd` to point to `assets/{schedule-alt.ejs,schedule-alt.yml,buttons-alt.ejs,buttons-alt.yml}` and `_quarto.yml` to point to `assets/styles-alt.scss`.
+
 ::: {#schedule}
 :::
 
