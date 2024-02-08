@@ -23,6 +23,8 @@ website:
           - units/unit3.qmd
       - href: data.qmd
         text: Datasets
+    footer: 
+      <a href="license.qmd">License</a>
           
 
 format:
