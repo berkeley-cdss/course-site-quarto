@@ -92,6 +92,7 @@ These instructions have been tested under MacOS.
    - Edit the other Markdown (or Quarto Markdown) files in the working directory and add files as desired.
      - You can make use of various Quarto features discussed in the [Quarto docs](https://quarto.org/docs/authoring).
    - Update `schedule.yml` and `buttons.yml` to reflect the material you want displayed in the main page, or move or remove the `#schedule` or `#buttons` items as desired, as well as the accompanying `listing` items in the yaml header of the document.
+   - Check the license assigned to the materials posted on the site (by default CC-BY) in `license.qmd` to make sure you are comfortable with it. You're welcome to choose another license that you prefer. If you'd like to not allow commercial use, you might choose CC-BY-NC. You might also consider not allowing derivative works, for example by choosing [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/deed.en) or CC-BY-NC-ND, as chosen for Data 8, but note that this license can make it hard for others to use the material in part or to build upon it. 
  
 5. Update your repository with the changes to your source files. First tell git about all files that should be in your repo.
 

@@ -20,7 +20,11 @@
            <% } %>
            <td><strong class="label label-<%- day.items[i].type %>"><%- day.items[i].type %> <%- day.items[i].id %></strong> <a href="<%- day.items[i].href %>" target="_blank"><%- day.items[i].name %></a></td>
            <% if (day.items[i].auxil) { %>
-                <td><a href="<%- day.items[i].auxil.href %>"><%- day.items[i].auxil.id %></a></td>
+                <td>
+                <% for (let j = 0; j < day.items[i].auxil.length; j++) { %>
+                  <a href="<%- day.items[i].auxil[j].href %>"><%- day.items[i].auxil[j].id %></a>
+                  <% } %>
+                </td>
            <% } else{ %>
                 <td></td>
            <% } %>

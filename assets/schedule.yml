@@ -7,8 +7,10 @@
           name: Introduction
           href: "./test.pdf"
           auxil:
-            id: "Note 1"
-            href: "./units/unit1.html"
+            - id: "Note 1"
+              href: "./units/unit1.html"
+            - id: "Note 2"
+              href: "./units/unit1.html"
         - type: "Participation"
           id: "1"
           name: Lecture Participation 1
