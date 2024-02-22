@@ -4,10 +4,10 @@ subtitle: "UC Berkeley, Spring 2024"
 listing:
   - id: schedule
     template: assets/schedule.ejs
-    contents: assets/schedule.yml
+    contents: schedule.yml
   - id: buttons
     template: assets/buttons.ejs
-    contents: assets/buttons.yml
+    contents: buttons.yml
 ---
 
 ::: {#buttons}
@@ -26,7 +26,7 @@ Things are picking up now.
 
 Here we use Quarto's EJS templating.
 
-For a style similar to that of [Stat 20](https://stat20.org), modify `index.qmd` to point to `assets/{schedule-alt.ejs,schedule-alt.yml,buttons-alt.ejs,buttons-alt.yml}` and `_quarto.yml` to point to `assets/styles-alt.scss`.
+For a style similar to that of [Stat 20](https://stat20.org), modify `index.qmd` to point to `assets/{schedule-alt.ejs,buttons-alt.ejs}` and to `{schedule-alt.yml,buttons-alt.yml}` and `_quarto.yml` to point to `assets/styles-alt.scss`.
 
 ::: {#schedule}
 :::
