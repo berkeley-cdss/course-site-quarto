@@ -8,7 +8,7 @@ website:
     logo: assets/stat_bear.png
     tools:
       - icon: github
-        href: https://github.com/berkeley-scf/stat999-quarto
+        href: https://github.com/berkeley-scf/course-site-quarto
     contents:
       - href: index.qmd
         text: Home / Schedule
