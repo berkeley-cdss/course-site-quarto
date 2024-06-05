@@ -4,7 +4,10 @@
     "href": "license.html",
     "title": "License",
     "section": "",
-    "text": "This work is licensed under a Creative Commons Attribution 4.0 International License."
+    "text": "This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "crumbs": [
+      "License"
+    ]
   },
   {
     "objectID": "calendar.html",
@@ -52,7 +55,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.09551244301740493",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n0.09817992201128653",
     "crumbs": [
       "Units",
       "Unit 1: Intro"
@@ -136,7 +139,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.15013934163109383",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.10333377730848098",
     "crumbs": [
       "Units",
       "Unit 3: More"
