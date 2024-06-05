@@ -24,8 +24,7 @@ website:
       - href: data.qmd
         text: Datasets
     footer: 
-      - href: license.qmd
-        text: License
+      <a href="license.qmd">License</a>
           
 
 format:
