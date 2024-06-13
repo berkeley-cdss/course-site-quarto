@@ -16,7 +16,7 @@ This repository contains a Quarto-based template for class website. You can see 
    - Various nice features such as callouts, tabsets, code folding, etc.
    - The ability to embed raw HTML for full flexibility when your output is HTML (but not PDF), including styling using CSS.
    - The ability to dynamically populate HTML elements with data from plain text data files (in yml format).
-   
+
 ## Terminology
 
 - "Rendering" a document or a site involves converting the *source* Markdown/notebook file to html, running any code chunks and including output. 
@@ -93,7 +93,7 @@ These instructions have been tested under MacOS.
      - You can make use of various Quarto features discussed in the [Quarto docs](https://quarto.org/docs/authoring).
    - Update `schedule.yml` and `buttons.yml` to reflect the material you want displayed in the main page, or move or remove the `#schedule` or `#buttons` items as desired, as well as the accompanying `listing` items in the yaml header of the document.
    - Check the license assigned to the materials posted on the site (by default CC-BY) in `license.qmd` to make sure you are comfortable with it. You're welcome to choose another license that you prefer. If you'd like to not allow commercial use, you might choose CC-BY-NC. You might also consider not allowing derivative works, for example by choosing [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/deed.en) or CC-BY-NC-ND, as chosen for Data 8, but note that this license can make it hard for others to use the material in part or to build upon it. 
- 
+
 5. Update your repository with the changes to your source files. First tell git about all files that should be in your repo.
 
    ```bash
@@ -108,7 +108,7 @@ These instructions have been tested under MacOS.
    If you modify an existing file, you can either do `git add currentfile.md` or include the `-a` flag when you run `git commit` to automatically update files that Git is already keeping track of, e.g., after modifying unit 7 files, `git commit -am "Updated Unit 7"`.
 
 6. Push your changed to GitHub (you might choose to wait to do this until after previewing the site, discussed in the next section).
-   
+
    ```bash
    git push
    ```
