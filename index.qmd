@@ -13,7 +13,7 @@ listing:
 ::: {#buttons}
 :::
 
-We could provide a templated listing of instructors here (or on its own page), similar to [DS100/fa23](https://github.com/DS-100/fa23).
+This page is hosted at [{{< var site-url >}}]({{< var site-url >}}). We could provide a templated listing of instructors here (or on its own page), similar to [DS100/fa23](https://github.com/DS-100/fa23).
 
 ::: {.callout-note title="Welcome to Week 1 of Stat 999"}
 :::
