@@ -123,8 +123,10 @@ Run `quarto preview` to see your site locally. Quarto will bring up the website 
 
    - You can also run `quarto render` to create the HTML (in the `_site` directory) without automatically displaying it. Or `quarto render file.qmd` to just render a single file. 
       - Note that you shouldn't commit the files in `_site` to your repository as they will be frequently regenerated and having them in the repository can complicate matters.
-      
+
 ### Publish Your Changes
+
+This section is relevant if you will be publishing the site from within your local development environment. It is also possible for SCF staff to set up automated publishing through actions such as a button push on GitHub, a schedule, or following `git` commands like pushes or commits. Contact SCF staff for details.
 
 1. Run `quarto publish gh-pages` from the command line to push updates to the course website.
    - Hit `Y` when prompted to "Update site at `https://stat555.stat.berkeley.edu/fall-2024/? "`
@@ -170,8 +172,17 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
    f. Click on **Create Repository**.
 
    g. Replace this README with the content shown in the next section.
-   
+
    h. Modify the link at `website->tools->href` to point to the GitHub repository for the class, rather than the template repository (or remove the GitHub link altogether; it shows up under the website logo and above the search bar in the upper left of the site.
+
+1. If the site will be published by GitHub Actions, there needs to be a `gh-pages` branch before the first action run can complete. Create an empty `gh-pages` branch by following [upstream instructions](https://quarto.org/docs/publishing/github-pages.html#source-branch):
+
+```bash
+git checkout --orphan gh-pages
+git reset --hard # make sure all changes are committed before running this!
+git commit --allow-empty -m "Initialising gh-pages branch"
+git push origin gh-pages
+```
 
 1. Enable GitHub Pages in the repository. Go to Settings > Pages > Source > GitHub Actions (Beta). Because a GitHub action is contained within the template, it will run when the template is instantiated and may fail until this step is completed.
 
