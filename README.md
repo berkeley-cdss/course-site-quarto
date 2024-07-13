@@ -165,28 +165,31 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
    c. Do not enable the **Include all branches** checkbox.
 
-   d. Name the repository after academic term, e.g. `fall-2024` and place it into the per-course organization, e.g. `berkeley-statNNN`.
+   d. Place the repository into the per-course organization, e.g. `berkeley-statNNN` and name it after the academic term in lowercase, e.g. `fall-2024`.
 
    e. You might choose the default of having your repository be public or choose that it be private while you are setting things up. Or you might choose for it always to be private.
 
    f. Click on **Create Repository**.
 
-   g. Replace this README with the content shown in the next section.
+1. Clone the new repository into a local working directory. Consider making the following changes:
 
-   h. Modify the link at `website->tools->href` to point to the GitHub repository for the class, rather than the template repository (or remove the GitHub link altogether; it shows up under the website logo and above the search bar in the upper left of the site.
+   a. Replace this README with the content shown in the next section.
 
-1. If the site will be published by GitHub Actions, there needs to be a `gh-pages` branch before the first action run can complete. Create an empty `gh-pages` branch by following [upstream instructions](https://quarto.org/docs/publishing/github-pages.html#source-branch):
+   b. In `_quarto.yml`, either modify the link at `website.tools.href` to point to the class's GitHub repository, rather than the template repository, or remove the GitHub link altogether. If present, it will show up under the website logo and above the search bar in the upper left of the site.
 
-```bash
-git checkout --orphan gh-pages
-git reset --hard # make sure all changes are committed before running this!
-git commit --allow-empty -m "Initialising gh-pages branch"
-git push origin gh-pages
-```
+1. Create an empty `gh-pages` branch by following [upstream instructions](https://quarto.org/docs/publishing/github-pages.html#source-branch):
 
-1. Enable GitHub Pages in the repository. Go to Settings > Pages > Source > GitHub Actions (Beta). Because a GitHub action is contained within the template, it will run when the template is instantiated and may fail until this step is completed.
+   ```bash
+   git checkout --orphan gh-pages
+   git reset --hard # make sure all changes are committed before running this!
+   git commit --allow-empty -m "Initialising gh-pages branch"
+   git push origin gh-pages
+   git checkout main
+   ```
 
-### README Content for Actual Class Repositories
+1. Enable GitHub Pages in the repository. Go to Settings > Pages > Source > Deploy from a branch, and set the branch to be `gh-pages`.
+
+### Example README Content for Actual Class Repositories
 
 This is the repository for the course website and course material for Statistics 555 for Fall 2024. 
 The website for which this content is the source materials is available at <https://stat555.berkeley.edu/fall-2024>.
