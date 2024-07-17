@@ -32,7 +32,7 @@ For instructors: please see [these instructions](https://github.com/berkeley-scf
 
 The simplest workflow is where departmental staff fork this template or a previous semester's repo into a new one. The instructor (and course staff of their choosing) are given permission to make changes.
 
-For example, given the class repo https://github.com/berkeley-stat555/fall-2024 :
+For example, given the class repo https://github.com/berkeley-stat999/fall-2024 :
 
 ```mermaid
 %% State diagram documentation at
@@ -40,8 +40,8 @@ For example, given the class repo https://github.com/berkeley-stat555/fall-2024 
 
 stateDiagram-v2
     repo_template: github.com/berkeley-scf/course-site-quarto
-    repo_dept: github.com/berkeley-stat555/fall-2024
-    website_dept: stat555.berkeley.edu/fall-2024
+    repo_dept: github.com/berkeley-stat999/fall-2024
+    website_dept: stat999.berkeley.edu/fall-2024
 
     repo_template --> repo_dept: Departmental staff fork template\nor previous term's repo.
     repo_dept --> website_dept: Course staff directly push changes which go live.
