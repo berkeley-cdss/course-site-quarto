@@ -178,7 +178,7 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
    a. Replace this README with the content shown in the next section.
 
-   b. In `_quarto.yml`, either modify the link at `website.tools.href` to point to the class's GitHub repository, rather than the template repository, or remove the GitHub link altogether. If present, it will show up under the website logo and above the search bar in the upper left of the site.
+   b. In `_quarto.yml`, either modify the link at `website.tools.href` to point to the class's GitHub repository, rather than the template repository, or remove the GitHub link altogether. If present, it will show up under the website logo and above the search bar in the upper left of the site. Also change "999" to the actual course number in `website.title`.
 
 1. Create an empty `gh-pages` branch by following [upstream instructions](https://quarto.org/docs/publishing/github-pages.html#source-branch):
 
