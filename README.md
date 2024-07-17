@@ -2,6 +2,9 @@
 
 This repository contains a Quarto-based template for class website. You can see a preview of it at [https://berkeley-scf.github.io/course-site-quarto](https://berkeley-scf.github.io/course-site-quarto). This template is intended to be forked and altered for other courses.
 
+For instructors: please see [these instructions](https://github.com/berkeley-scf/course-site-quarto#instructions-for-course-staff) on how to use this repository.
+
+
 ## Capabilities of this Quarto-based Template
 
 - Create a website by modifying content in a GitHub repository.
@@ -47,7 +50,7 @@ stateDiagram-v2
 
 Another method involves course staff forking the class repo into their own GitHub account. They would then make pull requests in the class repo, and following feedback, discussion, alterations, etc., authorized staff could merge the PRs. This gives the instructor or repo admin a bit more control over changes.
 
-For example, given the instructor with GitHub handle `@paciorek` and the shared class repo https://github.com/berkeley-stat555/fall-2024 :
+For example, given the instructor with GitHub handle `@paciorek` and the shared class repo https://github.com/berkeley-stat999/fall-2024 :
 
 ```mermaid
 %% State diagram documentation at
@@ -55,9 +58,9 @@ For example, given the instructor with GitHub handle `@paciorek` and the shared 
 
 stateDiagram-v2
     repo_template: github.com/berkeley-scf/course-site-quarto
-    repo_dept: github.com/berkeley-stat555/fall-2024
-    repo_i: github.com/paciorek/stat555-fall-2024
-    website_dept: stat555.berkeley.edu/fall-2024
+    repo_dept: github.com/berkeley-stat999/fall-2024
+    repo_i: github.com/paciorek/stat999-fall-2024
+    website_dept: stat999.berkeley.edu/fall-2024
 
     repo_template --> repo_dept: Departmental staff fork template\nor previous term's repo.
     repo_dept --> repo_i: Contributor forks\nclass repo.
@@ -75,14 +78,14 @@ These instructions have been tested under MacOS.
 
 2. [Install Git](https://git-scm.com/downloads) if you don't have it installed.
 
-3. When department staff notify you that the class repository is ready, clone it into a local working directory on your computer. For the purposes of these instructions, we'll pretend your repository is at https://github.com/berkeley-stat555/fall-2024.
+3. When department staff notify you that the class repository is ready, clone it into a local working directory on your computer. For the purposes of these instructions, we'll pretend your repository is at https://github.com/berkeley-stat999/fall-2024.
    - You can do this from the terminal/commandline or within a Git graphical application (e.g., `GitHub Desktop`).
    - From the terminal it would look like this:
      ```bash
-     git clone https://github.com/berkeley-stat555/fall-2024
+     git clone https://github.com/berkeley-stat999/fall-2024
      cd fall-2024
      ```
-   If you need to maintain several of these websites and there is a conflict in working directory names, you can just rename the working directory after cloning it, e.g. `mv fall-2024 stat555-fall-2024; cd stat555-fall-2024`.
+   If you need to maintain several of these websites and there is a conflict in working directory names, you can just rename the working directory after cloning it, e.g. `mv fall-2024 stat999-fall-2024; cd stat999-fall-2024`.
 
 
 4. Begin making changes relevant to your course. 
@@ -102,7 +105,7 @@ These instructions have been tested under MacOS.
 
    Then commit your changes:
    ```bash
-   git commit -m "Initial checkin for Stat 555."
+   git commit -m "Initial checkin for Stat 999."
    ```
 
    If you modify an existing file, you can either do `git add currentfile.md` or include the `-a` flag when you run `git commit` to automatically update files that Git is already keeping track of, e.g., after modifying unit 7 files, `git commit -am "Updated Unit 7"`.
@@ -129,13 +132,13 @@ Run `quarto preview` to see your site locally. Quarto will bring up the website 
 This section is relevant if you will be publishing the site from within your local development environment. It is also possible for SCF staff to set up automated publishing through actions such as a button push on GitHub, a schedule, or following `git` commands like pushes or commits. Contact SCF staff for details.
 
 1. Run `quarto publish gh-pages` from the command line to push updates to the course website.
-   - Hit `Y` when prompted to "Update site at `https://stat555.stat.berkeley.edu/fall-2024/? "`
+   - Hit `Y` when prompted to "Update site at `https://stat999.stat.berkeley.edu/fall-2024/? "`
    - Wait a minute for the content to be rendered on your computer. You should then see a message that files are being updated in the `gh-pages` branch.
    - Wait a minute for the content to be copied to the GitHub Pages site.
 
-2. You can observe the build process at GitHub by clicking on the Actions button at the top of your repository, e.g. https://github.com/berkeley-stat555/fall-2024/actions. It usually takes a couple of minutes for this to complete. 
+2. You can observe the build process at GitHub by clicking on the Actions button at the top of your repository, e.g. https://github.com/berkeley-stat999/fall-2024/actions. It usually takes a couple of minutes for this to complete. 
 
-3. If there are no problems, your website will be publicly available at https://stat555.berkeley.edu/fall-2024 (as well as at `https://berkeley-stat555.github.io/fall-2024`).
+3. If there are no problems, your website will be publicly available at https://stat999.berkeley.edu/fall-2024 (as well as at `https://berkeley-stat999.github.io/fall-2024`).
 
 4. As you make changes, you can continue to run `quarto publish gh-pages`. The publishing process saves the rendered files for the webpage to the `gh-pages` branch of your repository. You will also want to regularly save (i.e., commit any changes to) the source files in the `main` (default) branch of your repository (Steps 5 and 6 above).
 
@@ -191,7 +194,7 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
 ### Example README Content for Actual Class Repositories
 
-This is the repository for the course website and course material for Statistics 555 for Fall 2024. 
-The website for which this content is the source materials is available at <https://stat555.berkeley.edu/fall-2024>.
+This is the repository for the course website and course material for Statistics XYZ for Fall 2024. 
+The website for which this content is the source materials is available at <https://statXYZ.berkeley.edu/fall-2024>.
 
-For instructors: please see [these instructions](https://github.com/berkeley-scf/course-site-quarto#instructions-for-course-staff) on how to use this repository.
+
