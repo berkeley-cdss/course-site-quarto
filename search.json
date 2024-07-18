@@ -89,7 +89,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.15095281477735717",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n0.02780378200781541",
     "crumbs": [
       "Units",
       "Unit 3: More"
@@ -111,7 +111,7 @@
     "href": "units/unit3.html#latex-macro",
     "title": "Unit 3: More",
     "section": "LaTeX macro",
-    "text": "LaTeX macro\n\nWarning: need to look back at this as having include-before-body in the yaml causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]",
+    "text": "LaTeX macro\n\nWarning: having include-before-body in the yaml header of this file causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]",
     "crumbs": [
       "Units",
       "Unit 3: More"
@@ -140,7 +140,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.03199906463730891",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.10771421685487213",
     "crumbs": [
       "Units",
       "Unit 1: Intro"
@@ -152,17 +152,6 @@
     "title": "Unit 1: Intro",
     "section": "\\(\\LaTeX\\)",
     "text": "\\(\\LaTeX\\)\n\\[\n\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n\\]",
-    "crumbs": [
-      "Units",
-      "Unit 1: Intro"
-    ]
-  },
-  {
-    "objectID": "units/unit1.html#latex-macro",
-    "href": "units/unit1.html#latex-macro",
-    "title": "Unit 1: Intro",
-    "section": "\\(\\LaTeX\\) macro",
-    "text": "\\(\\LaTeX\\) macro\n\nWarning: need to look back at this as having include-before-body in the yaml causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]",
     "crumbs": [
       "Units",
       "Unit 1: Intro"
