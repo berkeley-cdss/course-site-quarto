@@ -11,6 +11,8 @@ format:
      - file: macros.tex
 ---
 
+[UNDER CONSTRUCTION]
+
 This is an example of using qmd as the source document with pdf as one target. I've taken out the qmd stuff that doesn't seem to render to pdf.
 
 ## Evaluated Python code chunk, with a plot
