@@ -35,7 +35,7 @@ $$
 
 ## LaTeX macro
 
-> **Warning**: need to look back at this as having `include-before-body` in the yaml causes extra space at top of page.
+> **Warning**: having `include-before-body` in the yaml header of this file causes extra space at top of page.
 
 $$
 A = X \trans Y
