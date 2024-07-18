@@ -151,11 +151,26 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
    a. Complete the course overview section and make other course-specific adjustments.
 
-   a. Create a .stat subdomain CNAME for statNNN.stat.berkeley.edu for the course in DNS if one does not already exist. See GitHub's [instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain).
-
    a. Add the CNAME to https://github.com/berkeley-statNNN/course-overview/settings/pages > Custom domain. This will add a `CNAME` file to the repository.
 
-   a. Request a top-level CNAME for statNNN.berkeley.edu pointing at statNNN.stat.berkeley.edu.
+1. Request an offsite hostname and top-level CNAME for statNNN.berkeley.edu:
+
+   a. Log into socreg.berkeley.edu and go to Security Contacts > Statistics
+   a. Go to the Offsite Hostnames tab.
+   a. Click "New Offsite Hostname" and create a new entry for each course:
+      1. Offsite Hostname: statNNN.berkeley.edu
+      1. Alternative Hostnames:
+      1. Description: Host instructional materials for the course.
+      1. The Hosting Service: GitHub Pages
+      1. Okay to Scan: Yes
+      1. PI: P1
+      1. Hosting Service IP: berkeley-statNNN.github.io
+      1. Canonical Hostname: berkeley-statNNN.github.io
+      1. Notes to DNS Administrator: This is analogous to the DNS entries for our other classes.
+   a. This generates a ticket. Once approved for offsite hosting, their ServiceNow process creates a follow up ticket with the campus hostmaster.
+   a. Wait for the campus hostmaster to create the CNAMEs.
+
+   The offsite entry is usually approved quickly, and the CNAME might take a week or two.
 
 1. Fork this `course-site-quarto` repository template:
 
