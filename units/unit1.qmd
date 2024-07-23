@@ -4,9 +4,9 @@ format:
   html:
     code-fold: show
     code-tools: true
-    include-before-body:
-     - file: macros.md
 ---
+
+[UNDER CONSTRUCTION]
 
 This is an example of using qmd as the source document.
 
@@ -29,13 +29,6 @@ $$
 \theta = \int_0^\infty f(x,\theta)d\theta
 $$
 
-## $\LaTeX$ macro
-
-> **Warning**: need to look back at this as having `include-before-body` in the yaml causes extra space at top of page.
-
-$$
-A = X \trans Y
-$$
 
 ## Styled div via direct html
 

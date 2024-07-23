@@ -11,6 +11,8 @@ format:
      - file: macros.tex
 ---
 
+[UNDER CONSTRUCTION]
+
 This is an example of using qmd as the source document with pdf as one target. I've taken out the qmd stuff that doesn't seem to render to pdf.
 
 ## Evaluated Python code chunk, with a plot
@@ -33,7 +35,7 @@ $$
 
 ## LaTeX macro
 
-> **Warning**: need to look back at this as having `include-before-body` in the yaml causes extra space at top of page.
+> **Warning**: having `include-before-body` in the yaml header of this file, as seemingly needed to enable macros, causes extra space at top of page.
 
 $$
 A = X \trans Y
