@@ -10,15 +10,15 @@
 .label-Homework { background-color: #E62100}
 
 
-th {
+#th-schedule {
     width: 10%;
 }
 
-td:first-of-type {
+#td-schedule:first-of-type {
     width: 60%;
 }
 
-td:last-of-type {
+#td-schedule:last-of-type {
     width: 30%;
 }
 
