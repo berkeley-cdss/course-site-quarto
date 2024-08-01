@@ -88,12 +88,13 @@ These instructions have been tested under MacOS.
    If you need to maintain several of these websites and there is a conflict in working directory names, you can just rename the working directory after cloning it, e.g. `mv fall-2024 stat999-fall-2024; cd stat999-fall-2024`.
 
 
-4. Begin making changes relevant to your course. 
-   - Modify the site's metadata and table of contents in `_quarto.yml` to reflect the structure you want.
+4. Begin making changes relevant to your course.
+   - In `_quarto.yml`, modify the site's metadata and table of contents to reflect the structure you want.
+   - In `index.qmd`, change "999" to the actual course number in the `title` and set the description. Also change the term in the `subtitle`.
+   - In `syllabus.qmd`, change "999" to the actual course number in the table of contents and headings.
 
    - Update `README.md` as needed.
-   - Edit the other Markdown (or Quarto Markdown) files in the working directory and add files as desired.
-     - You can make use of various Quarto features discussed in the [Quarto docs](https://quarto.org/docs/authoring).
+   - Edit the other Markdown (or Quarto Markdown) files in the working directory and add files as desired. You can make use of various Quarto features discussed in the [Quarto docs](https://quarto.org/docs/authoring).
    - Update `schedule.yml` and `buttons.yml` to reflect the material you want displayed in the main page, or move or remove the `#schedule` or `#buttons` items as desired, as well as the accompanying `listing` items in the yaml header of the document.
    - Check the license assigned to the materials posted on the site (by default CC-BY) in `license.qmd` to make sure you are comfortable with it. You're welcome to choose another license that you prefer. If you'd like to not allow commercial use, you might choose CC-BY-NC. You might also consider not allowing derivative works, for example by choosing [CC-BY-ND](https://creativecommons.org/licenses/by-nd/4.0/deed.en) or CC-BY-NC-ND, as chosen for Data 8, but note that this license can make it hard for others to use the material in part or to build upon it. 
 
@@ -154,11 +155,26 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
    a. Complete the course overview section and make other course-specific adjustments.
 
-   a. Create a .stat subdomain CNAME for statNNN.stat.berkeley.edu for the course in DNS if one does not already exist. See GitHub's [instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain).
-
    a. Add the CNAME to https://github.com/berkeley-statNNN/course-overview/settings/pages > Custom domain. This will add a `CNAME` file to the repository.
 
-   a. Request a top-level CNAME for statNNN.berkeley.edu pointing at statNNN.stat.berkeley.edu.
+1. Request an offsite hostname and top-level CNAME for statNNN.berkeley.edu:
+
+   a. Log into socreg.berkeley.edu and go to Security Contacts > Statistics
+   a. Go to the Offsite Hostnames tab.
+   a. Click "New Offsite Hostname" and create a new entry for each course:
+      1. Offsite Hostname: statNNN.berkeley.edu
+      1. Alternative Hostnames:
+      1. Description: Host instructional materials for the course.
+      1. The Hosting Service: GitHub Pages
+      1. Okay to Scan: Yes
+      1. PI: P1
+      1. Hosting Service IP: berkeley-statNNN.github.io
+      1. Canonical Hostname: berkeley-statNNN.github.io
+      1. Notes to DNS Administrator: This is analogous to the DNS entries for our other classes.
+   a. This generates a ticket. Once approved for offsite hosting, their ServiceNow process creates a follow up ticket with the campus hostmaster.
+   a. Wait for the campus hostmaster to create the CNAMEs.
+
+   The offsite entry is usually approved quickly, and the CNAME might take a week or two.
 
 1. Fork this `course-site-quarto` repository template:
 
