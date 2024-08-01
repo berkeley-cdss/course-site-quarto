@@ -254,6 +254,7 @@ window.Quarto = {
   <li><a href="#styled-div-via-direct-html" id="toc-styled-div-via-direct-html" class="nav-link" data-scroll-target="#styled-div-via-direct-html">Styled div via direct html</a></li>
   <li><a href="#a-callout" id="toc-a-callout" class="nav-link" data-scroll-target="#a-callout">A callout</a></li>
   <li><a href="#tabset" id="toc-tabset" class="nav-link" data-scroll-target="#tabset">Tabset</a></li>
+  <li><a href="#a-basic-markdown-table" id="toc-a-basic-markdown-table" class="nav-link" data-scroll-target="#a-basic-markdown-table">A basic Markdown table</a></li>
   </ul>
 </nav>
     </div>
@@ -283,7 +284,7 @@ window.Quarto = {
 <p>This is an example of using qmd as the source document.</p>
 <section id="evaluated-python-code-chunk-with-a-plot" class="level2">
 <h2 class="anchored" data-anchor-id="evaluated-python-code-chunk-with-a-plot">Evaluated Python code chunk, with a plot</h2>
-<div id="28a2a1bc" class="cell" data-execution_count="1">
+<div id="36c41697" class="cell" data-execution_count="1">
 <details open="" class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -296,12 +297,12 @@ window.Quarto = {
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="unit1_files/figure-html/cell-2-output-1.png" width="566" height="411" class="figure-img"></p>
+<p><img src="unit1_files/figure-html/cell-2-output-1.png" width="566" height="413" class="figure-img"></p>
 </figure>
 </div>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>-0.10771421685487213</code></pre>
+<pre><code>-0.011892227522277109</code></pre>
 </div>
 </div>
 </section>
@@ -354,7 +355,7 @@ Tip with Title
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>This code is executed.</p>
-<div id="4d13e853" class="cell" data-execution_count="2">
+<div id="9e02d725" class="cell" data-execution_count="2">
 <details open="" class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fizz_buzz(num):</span>
@@ -376,6 +377,39 @@ Tip with Title
 </div>
 </div>
 </div>
+</section>
+<section id="a-basic-markdown-table" class="level2">
+<h2 class="anchored" data-anchor-id="a-basic-markdown-table">A basic Markdown table</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Default</th>
+<th style="text-align: left;">Left</th>
+<th style="text-align: right;">Right</th>
+<th style="text-align: right;">Center</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>12</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td>123</td>
+<td style="text-align: left;">123</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">123</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
 
 
 <!-- -->
@@ -940,6 +974,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a><span class="fu">## A basic Markdown table</span></span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a>| Default | Left | Right | Center |</span>
+<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a>|----|:--|---:|-----------------------:|</span>
+<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a>| 12      | 12   |    12 |   12   |</span>
+<span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a>| 123     | 123  |   123 |  123   |</span>
+<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a>| 1       | 1    |     1 |   1    |</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

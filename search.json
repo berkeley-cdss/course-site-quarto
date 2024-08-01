@@ -89,7 +89,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n0.02780378200781541",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.07562102396687749",
     "crumbs": [
       "Units",
       "Unit 3: More"
@@ -111,7 +111,7 @@
     "href": "units/unit3.html#latex-macro",
     "title": "Unit 3: More",
     "section": "LaTeX macro",
-    "text": "LaTeX macro\n\nWarning: having include-before-body in the yaml header of this file causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]",
+    "text": "LaTeX macro\n\nWarning: having include-before-body in the yaml header of this file, as seemingly needed to enable macros, causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]",
     "crumbs": [
       "Units",
       "Unit 3: More"
@@ -140,7 +140,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.10771421685487213",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.011892227522277109",
     "crumbs": [
       "Units",
       "Unit 1: Intro"
@@ -185,6 +185,17 @@
     "title": "Unit 1: Intro",
     "section": "Tabset",
     "text": "Tabset\n\nRPython\n\n\nThis code is not executed.\nfizz_buzz &lt;- function(fbnums = 1:50) {\n  output &lt;- dplyr::case_when(\n    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n    fbnums %% 3 == 0 ~ \"Fizz\",\n    fbnums %% 5 == 0 ~ \"Buzz\",\n    TRUE ~ as.character(fbnums)\n  )\n  print(output)\n}\n\nfizz_buzz(3)\n\n\nThis code is executed.\n\n\nCode\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)\n    \nfizz_buzz(3)\n\n\nFizz",
+    "crumbs": [
+      "Units",
+      "Unit 1: Intro"
+    ]
+  },
+  {
+    "objectID": "units/unit1.html#a-basic-markdown-table",
+    "href": "units/unit1.html#a-basic-markdown-table",
+    "title": "Unit 1: Intro",
+    "section": "A basic Markdown table",
+    "text": "A basic Markdown table\n\n\n\nDefault\nLeft\nRight\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1",
     "crumbs": [
       "Units",
       "Unit 1: Intro"
