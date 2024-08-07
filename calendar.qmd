@@ -2,8 +2,42 @@
 title: "Calendar"
 ---
 
-[UNDER CONSTRUCTION]
+## Course Calendar
 
-We can just embed the iframe html:
+This is an example of embedding a calendar widget with multiple calendars:
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&mode=WEEK&src=Y190OGE0MzY1cGhmY20wMGUyOW1oMXVha3Fuc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19wZjBhcmZlYnBndGtiNTJlb25jbzNxMmVwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19hZWNnMGE0djVlYmdjbDh0amo3cTcyNm9wNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19pZmlxOTA3MGI5OGprMDJoYnI4cDM3djNlc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=c_469240f03417bcbdddb731b455bbff98dba55de11c5afb03fff0657e39522b54%40group.calendar.google.com&color=%237CB342&color=%23795548&color=%233F51B5&color=%23D50000&color=%235229A3" height=800 width=800 title="an embedded website (could be a calendar)"></iframe>
+
+You can embed many kinds of websites in this one. This example just happens to be a Google Calendar.
+
+## Create and Embed Multiple Google Calendars into a Single View
+
+These instructions document how to create calendars and generate a single embedable URL for them. This might be useful if you want to have different calendars for assignments, exams, instructor office hours, GSI office hours, etc.
+
+We suggest that you delete these instructions before publishing your website.
+
+1. **Create the Calendars:**
+   - Go to [Google Calendar](https://calendar.google.com/).
+   - On the left sidebar, click the `+` sign next to "Other calendars" and select "Create new calendar".
+   - Create your calendars and name them appropriately.
+
+2. **Obtain the Embed Code for Each Calendar:**
+   - For each calendar, go to its settings by clicking on the three dots next to the calendar name and selecting "Settings and sharing".
+   - In the calendar settings, scroll down to "Integrate calendar" and copy the embed code provided under "Embed code".
+
+3. **Combine the Embed Codes:**
+   - Instead of copying the entire embed code, you need the calendar's ID, which is part of the embed URL. It will look something like `calendarID@group.calendar.google.com`.
+   - For example, in the embed URL `https://calendar.google.com/calendar/embed?src=calendarID@group.calendar.google.com`, `calendarID@group.calendar.google.com` is the part you need.
+
+4. **Create a Single Embed Link:**
+   - Use the base URL for embedding multiple calendars: `https://calendar.google.com/calendar/embed?`
+   - Append each calendar ID to the base URL using the format `&src=calendarID@group.calendar.google.com` for each calendar you want to include.
+   - Optionally, you can customize the appearance by adding parameters (e.g., `&color=%23F6BF26` for the color, `&ctz=America%2FLos_Angeles` for the time zone).
+
+   For example, if you have two calendars with IDs `calendar1ID@group.calendar.google.com` and `calendar2ID@group.calendar.google.com`, your combined embed link would look like this:
+
+   ```plaintext
+   https://calendar.google.com/calendar/embed?src=calendar1ID@group.calendar.google.com&src=calendar2ID@group.calendar.google.com
+   ```
+
+   You can replace the value of the `src` attribute in the iframe element above with this URL.
