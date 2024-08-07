@@ -187,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#course-calendar" id="toc-course-calendar" class="nav-link active" data-scroll-target="#course-calendar">Course Calendar</a></li>
-  <li><a href="#create-and-embed-multiple-google-calendars-into-a-single-view" id="toc-create-and-embed-multiple-google-calendars-into-a-single-view" class="nav-link" data-scroll-target="#create-and-embed-multiple-google-calendars-into-a-single-view">Create and Embed Multiple Google Calendars into a Single View</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
   </ul>
 </nav>
     </div>
@@ -215,14 +215,11 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="course-calendar" class="level2">
 <h2 class="anchored" data-anchor-id="course-calendar">Course Calendar</h2>
-<p>This is an example of embedding a calendar widget with multiple calendars:</p>
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;showTitle=0&amp;mode=WEEK&amp;src=Y190OGE0MzY1cGhmY20wMGUyOW1oMXVha3Fuc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19wZjBhcmZlYnBndGtiNTJlb25jbzNxMmVwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19hZWNnMGE0djVlYmdjbDh0amo3cTcyNm9wNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19pZmlxOTA3MGI5OGprMDJoYnI4cDM3djNlc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=c_469240f03417bcbdddb731b455bbff98dba55de11c5afb03fff0657e39522b54%40group.calendar.google.com&amp;color=%237CB342&amp;color=%23795548&amp;color=%233F51B5&amp;color=%23D50000&amp;color=%235229A3" height="800" width="800" title="an embedded website (could be a calendar)">
-</iframe>
-<p>You can embed many kinds of websites in this one. This example just happens to be a Google Calendar.</p>
+<p>This is an example of embedding a widget with multiple calendars. This might be useful if you want to have different calendars for assignments, exams, instructor office hours, GSI office hours, etc.</p>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;showTitle=0&amp;mode=WEEK&amp;src=Y190OGE0MzY1cGhmY20wMGUyOW1oMXVha3Fuc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19wZjBhcmZlYnBndGtiNTJlb25jbzNxMmVwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19hZWNnMGE0djVlYmdjbDh0amo3cTcyNm9wNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19pZmlxOTA3MGI5OGprMDJoYnI4cDM3djNlc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=c_469240f03417bcbdddb731b455bbff98dba55de11c5afb03fff0657e39522b54%40group.calendar.google.com&amp;color=%237CB342&amp;color=%23795548&amp;color=%233F51B5&amp;color=%23D50000&amp;color=%235229A3" height="800" width="800" title="an embedded website (could be a calendar)"></iframe>
 </section>
-<section id="create-and-embed-multiple-google-calendars-into-a-single-view" class="level2">
-<h2 class="anchored" data-anchor-id="create-and-embed-multiple-google-calendars-into-a-single-view">Create and Embed Multiple Google Calendars into a Single View</h2>
-<p>These instructions document how to create calendars and generate a single embedable URL for them. This might be useful if you want to have different calendars for assignments, exams, instructor office hours, GSI office hours, etc.</p>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
 <p>We suggest that you delete these instructions before publishing your website.</p>
 <ol type="1">
 <li><p><strong>Create the Calendars:</strong></p>
@@ -248,8 +245,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Optionally, you can customize the appearance by adding parameters (e.g., <code>&amp;color=%23F6BF26</code> for the color, <code>&amp;ctz=America%2FLos_Angeles</code> for the time zone).</li>
 </ul>
 <p>For example, if you have two calendars with IDs <code>calendar1ID@group.calendar.google.com</code> and <code>calendar2ID@group.calendar.google.com</code>, your combined embed link would look like this:</p>
-<pre class="plaintext"><code>https://calendar.google.com/calendar/embed?src=calendar1ID@group.calendar.google.com&amp;src=calendar2ID@group.calendar.google.com</code></pre>
-<p>You can replace the value of the <code>src</code> attribute in the iframe element above with this URL.</p></li>
+<blockquote class="blockquote">
+<p>https://calendar.google.com/calendar/embed?src=calendar1ID@group.calendar.google.com&amp;src=calendar2ID@group.calendar.google.com</p>
+</blockquote>
+<p>Substitute this URL into the <code>src</code> attribute of the calendar’s iframe at the top of this page.</p></li>
 </ol>
 
 
