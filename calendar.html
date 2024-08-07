@@ -181,8 +181,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#course-calendar" id="toc-course-calendar" class="nav-link active" data-scroll-target="#course-calendar">Course Calendar</a></li>
+  <li><a href="#create-and-embed-multiple-google-calendars-into-a-single-view" id="toc-create-and-embed-multiple-google-calendars-into-a-single-view" class="nav-link" data-scroll-target="#create-and-embed-multiple-google-calendars-into-a-single-view">Create and Embed Multiple Google Calendars into a Single View</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -206,12 +213,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>[UNDER CONSTRUCTION]</p>
-<p>We can just embed the iframe html:</p>
+<section id="course-calendar" class="level2">
+<h2 class="anchored" data-anchor-id="course-calendar">Course Calendar</h2>
+<p>This is an example of embedding a calendar widget with multiple calendars:</p>
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;showTitle=0&amp;mode=WEEK&amp;src=Y190OGE0MzY1cGhmY20wMGUyOW1oMXVha3Fuc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19wZjBhcmZlYnBndGtiNTJlb25jbzNxMmVwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19hZWNnMGE0djVlYmdjbDh0amo3cTcyNm9wNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y19pZmlxOTA3MGI5OGprMDJoYnI4cDM3djNlc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=c_469240f03417bcbdddb731b455bbff98dba55de11c5afb03fff0657e39522b54%40group.calendar.google.com&amp;color=%237CB342&amp;color=%23795548&amp;color=%233F51B5&amp;color=%23D50000&amp;color=%235229A3" height="800" width="800" title="an embedded website (could be a calendar)">
 </iframe>
+<p>You can embed many kinds of websites in this one. This example just happens to be a Google Calendar.</p>
+</section>
+<section id="create-and-embed-multiple-google-calendars-into-a-single-view" class="level2">
+<h2 class="anchored" data-anchor-id="create-and-embed-multiple-google-calendars-into-a-single-view">Create and Embed Multiple Google Calendars into a Single View</h2>
+<p>These instructions document how to create calendars and generate a single embedable URL for them. This might be useful if you want to have different calendars for assignments, exams, instructor office hours, GSI office hours, etc.</p>
+<p>We suggest that you delete these instructions before publishing your website.</p>
+<ol type="1">
+<li><p><strong>Create the Calendars:</strong></p>
+<ul>
+<li>Go to <a href="https://calendar.google.com/">Google Calendar</a>.</li>
+<li>On the left sidebar, click the <code>+</code> sign next to “Other calendars” and select “Create new calendar”.</li>
+<li>Create your calendars and name them appropriately.</li>
+</ul></li>
+<li><p><strong>Obtain the Embed Code for Each Calendar:</strong></p>
+<ul>
+<li>For each calendar, go to its settings by clicking on the three dots next to the calendar name and selecting “Settings and sharing”.</li>
+<li>In the calendar settings, scroll down to “Integrate calendar” and copy the embed code provided under “Embed code”.</li>
+</ul></li>
+<li><p><strong>Combine the Embed Codes:</strong></p>
+<ul>
+<li>Instead of copying the entire embed code, you need the calendar’s ID, which is part of the embed URL. It will look something like <code>calendarID@group.calendar.google.com</code>.</li>
+<li>For example, in the embed URL <code>https://calendar.google.com/calendar/embed?src=calendarID@group.calendar.google.com</code>, <code>calendarID@group.calendar.google.com</code> is the part you need.</li>
+</ul></li>
+<li><p><strong>Create a Single Embed Link:</strong></p>
+<ul>
+<li>Use the base URL for embedding multiple calendars: <code>https://calendar.google.com/calendar/embed?</code></li>
+<li>Append each calendar ID to the base URL using the format <code>&amp;src=calendarID@group.calendar.google.com</code> for each calendar you want to include.</li>
+<li>Optionally, you can customize the appearance by adding parameters (e.g., <code>&amp;color=%23F6BF26</code> for the color, <code>&amp;ctz=America%2FLos_Angeles</code> for the time zone).</li>
+</ul>
+<p>For example, if you have two calendars with IDs <code>calendar1ID@group.calendar.google.com</code> and <code>calendar2ID@group.calendar.google.com</code>, your combined embed link would look like this:</p>
+<pre class="plaintext"><code>https://calendar.google.com/calendar/embed?src=calendar1ID@group.calendar.google.com&amp;src=calendar2ID@group.calendar.google.com</code></pre>
+<p>You can replace the value of the <code>src</code> attribute in the iframe element above with this URL.</p></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
