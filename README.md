@@ -1,8 +1,8 @@
 # course-site-quarto
 
-This repository contains a Quarto-based template for class website. You can see a preview of it at [https://berkeley-scf.github.io/course-site-quarto](https://berkeley-scf.github.io/course-site-quarto). This template is intended to be forked and altered for other courses.
+This repository contains a Quarto-based template for class website. You can see a preview of it at [https://berkeley-cdss.github.io/course-site-quarto](https://berkeley-cdss.github.io/course-site-quarto). This template is intended to be forked and altered for other courses.
 
-For instructors: please see [these instructions](https://github.com/berkeley-scf/course-site-quarto#instructions-for-course-staff) on how to use this repository.
+For instructors: please see [these instructions](https://github.com/berkeley-cdss/course-site-quarto#instructions-for-course-staff) on how to use this repository.
 
 
 ## Capabilities of this Quarto-based Template
@@ -39,7 +39,7 @@ For example, given the class repo https://github.com/berkeley-stat999/fall-2024 
 %% https://mermaid.js.org/syntax/stateDiagram.html
 
 stateDiagram-v2
-    repo_template: github.com/berkeley-scf/course-site-quarto
+    repo_template: github.com/berkeley-cdss/course-site-quarto
     repo_dept: github.com/berkeley-stat999/fall-2024
     website_dept: stat999.berkeley.edu/fall-2024
 
@@ -57,7 +57,7 @@ For example, given the instructor with GitHub handle `@paciorek` and the shared 
 %% https://mermaid.js.org/syntax/stateDiagram.html
 
 stateDiagram-v2
-    repo_template: github.com/berkeley-scf/course-site-quarto
+    repo_template: github.com/berkeley-cdss/course-site-quarto
     repo_dept: github.com/berkeley-stat999/fall-2024
     repo_i: github.com/paciorek/stat999-fall-2024
     website_dept: stat999.berkeley.edu/fall-2024
@@ -151,7 +151,7 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
 1. If it was necessary to create a new GitHub organization, create a course overview repository and website as well.
 
-   a. Instantiate the template at https://github.com/berkeley-scf/course-overview into the new organization.
+   a. Instantiate the template at https://github.com/berkeley-cdss/course-overview into the new organization.
 
    a. Complete the course overview section and make other course-specific adjustments.
 
@@ -178,7 +178,7 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
 1. Fork this `course-site-quarto` repository template:
 
-   a. Visit https://github.com/berkeley-scf/course-site-quarto.
+   a. Visit https://github.com/berkeley-cdss/course-site-quarto.
 
    b. Above the file list click **Use this template** and then **Create a new repository**. This will then bring you to a screen where you'll configure the new repository.
 

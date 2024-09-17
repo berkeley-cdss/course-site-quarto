@@ -2,14 +2,14 @@ project:
   type: website
 
 website:
-  site-url: https://berkeley-scf.github.io/course-site-quarto/
+  site-url: https://berkeley-cdss.github.io/course-site-quarto/
   sidebar:
     style: docked
     title: "Stat 999"
     logo: assets/stat_bear.png
     tools:
       - icon: github
-        href: https://github.com/berkeley-scf/course-site-quarto
+        href: https://github.com/berkeley-cdss/course-site-quarto
     contents:
       - href: index.qmd
         text: Home / Schedule
