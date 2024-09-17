@@ -6,12 +6,12 @@ title: "Syllabus"
 
 Jump to:
 
-- [About Statistics 999](#about-statistics-999)
+- [About Department 999](#about-department-999)
   - [Goals](#goals)
   - [Prerequisites](#prerequisites)
 
 
-## About Statistics 999
+## About Department 999
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum. 
 

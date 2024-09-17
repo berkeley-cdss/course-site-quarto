@@ -143,7 +143,7 @@ This section is relevant if you will be publishing the site from within your loc
 
 4. As you make changes, you can continue to run `quarto publish gh-pages`. The publishing process saves the rendered files for the webpage to the `gh-pages` branch of your repository. You will also want to regularly save (i.e., commit any changes to) the source files in the `main` (default) branch of your repository (Steps 5 and 6 above).
 
-The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/computing/how-get-help) if you are a Berkeley Statistics instructor and you run into problems or questions.
+Staff are happy to help. Please [contact us](https://statistics.berkeley.edu/computing/how-get-help) if you are a Berkeley Statistics instructor and you run into problems or questions.
 
 ## Instructions for Department Staff
 
@@ -155,9 +155,9 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
    a. Complete the course overview section and make other course-specific adjustments.
 
-   a. Add the CNAME to https://github.com/berkeley-statNNN/course-overview/settings/pages > Custom domain. This will add a `CNAME` file to the repository.
+   a. Add the CNAME to the repository's settings under /settings/pages > Custom domain. This will add a `CNAME` file to the repository.
 
-1. Request an offsite hostname and top-level CNAME for statNNN.berkeley.edu:
+1. If using a .berkeley.edu hostname such as `course123.berkeley.edu`, sequest an offsite hostname and top-level CNAME. This example assumes a course named Stat NNN with the Statistics socreg security context.
 
    a. Log into socreg.berkeley.edu and go to Security Contacts > Statistics
    a. Go to the Offsite Hostnames tab.
@@ -210,7 +210,7 @@ The SCF is happy to help. Please [contact us](https://statistics.berkeley.edu/co
 
 ### Example README Content for Actual Class Repositories
 
-This is the repository for the course website and course material for Statistics XYZ for Fall 2024. 
+This is the repository for the course website and course material for Department XYZ for Fall 2024. 
 The website for which this content is the source materials is available at <https://statXYZ.berkeley.edu/fall-2024>.
 
 

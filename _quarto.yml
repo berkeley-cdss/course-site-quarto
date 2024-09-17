@@ -5,7 +5,7 @@ website:
   site-url: https://berkeley-cdss.github.io/course-site-quarto/
   sidebar:
     style: docked
-    title: "Stat 999"
+    title: "Dept 999"
     logo: assets/stat_bear.png
     tools:
       - icon: github
