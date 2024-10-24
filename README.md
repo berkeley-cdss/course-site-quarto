@@ -88,10 +88,10 @@ These instructions have been tested under MacOS.
    If you need to maintain several of these websites and there is a conflict in working directory names, you can just rename the working directory after cloning it, e.g. `mv fall-2024 stat999-fall-2024; cd stat999-fall-2024`.
 
 
-4. Begin making changes relevant to your course.
-   - In `_quarto.yml`, modify the site's metadata and table of contents to reflect the structure you want.
-   - In `index.qmd`, change "999" to the actual course number in the `title` and set the description. Also change the term in the `subtitle`.
-   - In `syllabus.qmd`, change "999" to the actual course number in the table of contents and headings.
+4. Begin making changes relevant to your course. In addition to providing your actual content, remember to:
+   - In `_quarto.yml`, modify the site's metadata and table of contents to reflect the structure you want. Change the `site-url` and `title` to reflect the course url and department/course number. 
+   - In `index.qmd`, change the `title` to the actual course title and change the term in the `subtitle`.
+   - In `syllabus.qmd`, change "Department 999" to the actual department and course number in the table of contents and headings.
 
    - Update `README.md` as needed.
    - Edit the other Markdown (or Quarto Markdown) files in the working directory and add files as desired. You can make use of various Quarto features discussed in the [Quarto docs](https://quarto.org/docs/authoring).
