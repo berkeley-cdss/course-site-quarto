@@ -7,10 +7,12 @@ website:
     style: docked
     title: "Dept 999"
     logo: assets/stat_bear.png
+    logo-alt: "UC Berkeley Statistics logo"
     tools:
       - icon: github
         href: https://github.com/berkeley-cdss/course-site-quarto
-    contents:
+        aria-label: GitHub
+     contents:
       - href: index.qmd
         text: Home / Schedule
       - href: syllabus.qmd
