@@ -12,7 +12,7 @@ website:
       - icon: github
         href: https://github.com/berkeley-cdss/course-site-quarto
         aria-label: GitHub
-     contents:
+    contents:
       - href: index.qmd
         text: Home / Schedule
       - href: syllabus.qmd
