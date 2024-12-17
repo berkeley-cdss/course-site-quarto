@@ -109,7 +109,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.07179083186178226",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.004598734977877802",
     "crumbs": [
       "Units",
       "Unit 3: More"
@@ -160,7 +160,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.10438872482803531",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n0.03685609572080518",
     "crumbs": [
       "Units",
       "Unit 1: Intro"
