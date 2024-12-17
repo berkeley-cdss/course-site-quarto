@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Statistics 999: Generic Statistics Class</title>
+<title>Department 999: Generic Class</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -186,9 +186,9 @@ window.Quarto = {
       <img src="./assets/stat_bear.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Stat 999</a> 
+      <a href="./">Dept 999</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/berkeley-scf/course-site-quarto" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://github.com/berkeley-cdss/course-site-quarto" title="" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -283,7 +283,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Statistics 999: Generic Statistics Class</h1>
+<h1 class="title">Department 999: Generic Class</h1>
 <p class="subtitle lead">UC Berkeley, Spring 2024</p>
 </div>
 
@@ -303,24 +303,26 @@ window.Quarto = {
 
 <div id="listing-buttons" class="quarto-listing quarto-listing-container-custom">
 
-  <button style="background-color: purple;"><a href="https://ibm.com" target="_blank">Ed</a></button>
+  <button style="background-color: purple;"><a href="https://berkeley.edu" target="_blank">Ed</a></button>
 
-  <button style="background-color: green;"><a href="https://ibm.com" target="_blank">DataHub</a></button>
+  <button style="background-color: green;"><a href="https://berkeley.edu" target="_blank">DataHub</a></button>
 
-  <button style="background-color: orange;"><a href="https://ibm.com" target="_blank">Gradescope</a></button>
+  <button style="background-color: red;"><a href="https://berkeley.edu" target="_blank">Gradescope</a></button>
+
+  <button style="background-color: blue;"><a href="https://berkeley.edu" target="_blank">bCourses</a></button>
 
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
 <p>[UNDER CONSTRUCTION]</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Welcome to Week 1 of Stat 999">
+<div class="callout callout-style-default callout-note callout-titled" title="Welcome to Week 1 of Dept 999">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Welcome to Week 1 of Stat 999
+Welcome to Week 1 of Dept 999
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -343,8 +345,47 @@ Welcome to Week 2
 <section id="schedule" class="level2">
 <h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
 <p>Here we use Quarto’s EJS templating.</p>
-<p>For a style similar to that of <a href="https://stat20.org">Stat 20</a>, modify <code>index.qmd</code> to point to <code>assets/{schedule-alt.ejs,buttons-alt.ejs}</code> and to <code>{schedule-alt.yml,buttons-alt.yml}</code> and <code>_quarto.yml</code> to point to <code>assets/styles-alt.scss</code>.</p>
+<p>For a style similar to that of <a href="https://stat20.berkeley.edu">Dept 20</a>, modify <code>index.qmd</code> to point to <code>_extensions/qmd-lab/course-website-ejs/schedule-this-week/schedule.ejs</code>.</p>
 <div id="listing-schedule" class="quarto-listing quarto-listing-container-custom">
+<style>
+.label {
+    border-radius: 9px;
+    padding: 5px;
+    color: white;
+}
+
+.label-Lecture { background-color: #4767FF}
+.label-Participation { background-color:  #7A2CAB}
+.label-Lab { background-color: #facd05}
+.label-Homework { background-color: crimson}
+.label-Exam { background-color: green}
+
+#th-schedule {
+    width: 10%;
+}
+
+#td-schedule:first-of-type {
+    width: 60%;
+}
+
+#td-schedule:last-of-type {
+    width: 30%;
+}
+
+table {
+    border: 2px solid;
+}
+
+.border {
+  color:#069;
+  font-weight: bold;
+}
+
+a.unpublished {
+  color:#808080
+}
+
+</style>
 
    <h4 class="anchored">Week 1</h4>
 
@@ -359,15 +400,21 @@ Welcome to Week 2
 
            <tr>
            
-           <th id="th-schedule" scope="row" rowspan="2">Aug 24:</th>
+           <th id="th-schedule" scope="row" rowspan="2">2024-08-23:</th>
            
-           <td id="td-schedule"><strong class="label label-Lecture">Lecture 1</strong> <a href="./units/unit1.html" target="_blank">Introduction</a></td>
+           
+              <td id="td-schedule"><strong class="label label-Lecture">Lecture 1</strong> <a href="./units/unit1.html" target="_blank">Introduction</a></td>
+           
            
                 <td id="td-schedule">
                 
-                  <a href="https://berkeley.edu">Note 1</a>
                   
-                  <a href="https://berkeley.edu">Note 2</a>
+                    <a href="https://berkeley.edu">Note 1</a>
+                  
+                  
+                  
+                    <a href="https://berkeley.edu">Note 2</a>
+                  
                   
                 </td>
            
@@ -377,7 +424,9 @@ Welcome to Week 2
 
            <tr>
            
-           <td id="td-schedule"><strong class="label label-Participation">Participation 1</strong> <a href="https://berkeley.edu" target="_blank">Lecture Participation 1</a></td>
+           
+              <td id="td-schedule"><strong class="label label-Participation">Participation 1</strong> <a href="https://berkeley.edu" target="_blank">Lecture Participation 1</a></td>
+           
            
                 <td></td>
            
@@ -390,9 +439,33 @@ Welcome to Week 2
 
            <tr>
            
-           <th id="th-schedule" scope="row" rowspan="3">Aug 25:</th>
+           <th id="th-schedule" scope="row" rowspan="3">2024-08-25:</th>
            
-           <td id="td-schedule"><strong class="label label-Lab">Lab 1</strong> <a href="https://berkeley.edu" target="_blank">Prerequisite Coding (due Aug 29)</a></td>
+           
+              <td id="td-schedule"><strong class="label label-Lecture">Lecture 2</strong> <a href="./units/unit2.html" target="_blank">Next</a></td>
+           
+           
+                <td id="td-schedule">
+                
+                  
+                    <a href="https://berkeley.edu">Note 1</a>
+                  
+                  
+                  
+                    <a href="https://berkeley.edu">Note 2</a>
+                  
+                  
+                </td>
+           
+                
+           </tr>
+        
+
+           <tr>
+           
+           
+              <td id="td-schedule"><strong class="label label-Homework">Homework 1A</strong> <a href="https://berkeley.edu" target="_blank">Plotting and Permutation Test (due Aug 31)</a></td>
+           
            
                 <td></td>
            
@@ -402,17 +475,9 @@ Welcome to Week 2
 
            <tr>
            
-           <td id="td-schedule"><strong class="label label-Homework">Homework 1A</strong> <a href="https://berkeley.edu" target="_blank">Plotting and Permutation Test (due Aug 31)</a></td>
            
-                <td></td>
+              <td id="td-schedule"><strong class="label label-Homework">Homework 1B</strong> <a href="https://berkeley.edu" target="_blank">Prerequisite Math (due Aug 31)</a></td>
            
-                
-           </tr>
-        
-
-           <tr>
-           
-           <td id="td-schedule"><strong class="label label-Homework">Homework 1B</strong> <a href="https://berkeley.edu" target="_blank">Prerequisite Math (due Aug 31)</a></td>
            
                 <td></td>
            
@@ -437,9 +502,11 @@ Welcome to Week 2
 
            <tr>
            
-           <th id="th-schedule" scope="row" rowspan="2">Aug 29:</th>
+           <th id="th-schedule" scope="row" rowspan="2">2024-08-29:</th>
            
-           <td id="td-schedule"><strong class="label label-Lecture">Lecture 2</strong> <a href="./units/unit2.html" target="_blank">Pandas 1</a></td>
+           
+              <td id="td-schedule"><strong class="label label-Lecture">Lecture 3</strong> <a href="./units/unit2.html" target="_blank">Pandas 1</a></td>
+           
            
                 <td></td>
            
@@ -449,10 +516,16 @@ Welcome to Week 2
 
            <tr>
            
-           <td id="td-schedule"><strong class="label label-Participation">Participation 2</strong> <a href="./units/unit3.html" target="_blank">Lecture Participation 2</a></td>
+           
+              <td id="td-schedule"><strong class="label label-Participation">Participation 2</strong> <a href="./units/unit3.html" target="_blank">Lecture Participation 2</a></td>
+           
            
                 <td id="td-schedule">
                 
+                  
+                    <a href="https://berkeley.edu">Note 3</a>
+                  
+                  
                 </td>
            
                 
@@ -565,7 +638,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/berkeley-scf\.github\.io\/course-site-quarto\/");
+      var filterRegex = new RegExp("https:\/\/berkeley-cdss\.github\.io\/course-site-quarto\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

@@ -1,53 +1,148 @@
 [
   {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data",
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
     "section": "",
-    "text": "[UNDER CONSTRUCTION]\nWe’ll use data from several real world situations in class.",
+    "text": "This work is licensed under a Creative Commons Attribution 4.0 International License.",
     "crumbs": [
-      "Datasets"
+      "License"
     ]
   },
   {
-    "objectID": "data.html#data-1",
-    "href": "data.html#data-1",
-    "title": "Data",
-    "section": "Data 1",
-    "text": "Data 1",
-    "crumbs": [
-      "Datasets"
-    ]
-  },
-  {
-    "objectID": "data.html#data-2",
-    "href": "data.html#data-2",
-    "title": "Data",
-    "section": "Data 2",
-    "text": "Data 2",
-    "crumbs": [
-      "Datasets"
-    ]
-  },
-  {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
+    "objectID": "calendar.html",
+    "href": "calendar.html",
+    "title": "Calendar",
     "section": "",
-    "text": "[UNDER CONSTRUCTION]\nJump to:",
+    "text": "This is an example of embedding a widget with multiple calendars. This might be useful if you want to have different calendars for assignments, exams, instructor office hours, GSI office hours, etc.",
     "crumbs": [
-      "Syllabus"
+      "Calendar"
     ]
   },
   {
-    "objectID": "syllabus.html#about-statistics-999",
-    "href": "syllabus.html#about-statistics-999",
-    "title": "Syllabus",
-    "section": "About Statistics 999",
-    "text": "About Statistics 999\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum.\n\nGoals\n\nGoal 1\nGoal 2\nGoal 3\n\n\n\nPrerequisites\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum.",
+    "objectID": "calendar.html#course-calendar",
+    "href": "calendar.html#course-calendar",
+    "title": "Calendar",
+    "section": "",
+    "text": "This is an example of embedding a widget with multiple calendars. This might be useful if you want to have different calendars for assignments, exams, instructor office hours, GSI office hours, etc.",
     "crumbs": [
-      "Syllabus"
+      "Calendar"
     ]
+  },
+  {
+    "objectID": "calendar.html#instructions",
+    "href": "calendar.html#instructions",
+    "title": "Calendar",
+    "section": "Instructions",
+    "text": "Instructions\nWe suggest that you delete these instructions before publishing your website.\n\nCreate the Calendars:\n\nGo to Google Calendar.\nOn the left sidebar, click the + sign next to “Other calendars” and select “Create new calendar”.\nCreate your calendars and name them appropriately.\n\nObtain the Embed Code for Each Calendar:\n\nFor each calendar, go to its settings by clicking on the three dots next to the calendar name and selecting “Settings and sharing”.\nIn the calendar settings, scroll down to “Integrate calendar” and copy the embed code provided under “Embed code”.\n\nCombine the Embed Codes:\n\nInstead of copying the entire embed code, you need the calendar’s ID, which is part of the embed URL. It will look something like calendarID@group.calendar.google.com.\nFor example, in the embed URL https://calendar.google.com/calendar/embed?src=calendarID@group.calendar.google.com, calendarID@group.calendar.google.com is the part you need.\n\nCreate a Single Embed Link:\n\nUse the base URL for embedding multiple calendars: https://calendar.google.com/calendar/embed?\nAppend each calendar ID to the base URL using the format &src=calendarID@group.calendar.google.com for each calendar you want to include.\nOptionally, you can customize the appearance by adding parameters (e.g., &color=%23F6BF26 for the color, &ctz=America%2FLos_Angeles for the time zone).\n\nFor example, if you have two calendars with IDs calendar1ID@group.calendar.google.com and calendar2ID@group.calendar.google.com, your combined embed link would look like this:\n\nhttps://calendar.google.com/calendar/embed?src=calendar1ID@group.calendar.google.com&src=calendar2ID@group.calendar.google.com\n\nSubstitute this URL into the src attribute of the calendar’s iframe at the top of this page.",
+    "crumbs": [
+      "Calendar"
+    ]
+  },
+  {
+    "objectID": "staff.html",
+    "href": "staff.html",
+    "title": "Staff",
+    "section": "",
+    "text": "[UNDER CONSTRUCTION]\nOffice hours are subject to change.\n\n\n\nInstructor: Person X x@berkeley.edu Office hours:  - Thursday 3pm-5pm, Evans 309  - Friday 2:00pm-4:30pm, Evans 309\n\n\nGSI: Person Y y@berkeley.edu Office hours: - Monday 11am-12pm, Evans 432 - Tuesday 4pm-5pm, Evans 432 - Wednesday 2pm-3pm, Evans 432 - Friday 12pm-1pm, Evans 432\n\n\nTutor: Person Z z@berkeley.edu Office hours:  - Wednesday 2:30pm - 4:30pm, Evans 434 - Sunday 2pm - 6pm, Zoom\n\n\nTutor: Person W w@berkeley.edu Office hours:  - Wednesday 10am-2pm, Evans 432 - Thursday 3-5pm, Evans 434",
+    "crumbs": [
+      "Staff"
+    ]
+  },
+  {
+    "objectID": "units/unit2.html",
+    "href": "units/unit2.html",
+    "title": "Unit 2: Next",
+    "section": "",
+    "text": "[UNDER CONSTRUCTION]\nThis is an example of using an ipynb file as source rather than qmd. It follows instructions from https://github.com/DS-100/course-notes/README.md.\nLink to the data.",
+    "crumbs": [
+      "Units",
+      "Unit 2: Next"
+    ]
+  },
+  {
+    "objectID": "units/unit2.html#latex",
+    "href": "units/unit2.html#latex",
+    "title": "Unit 2: Next",
+    "section": "\\(\\LaTeX\\)",
+    "text": "\\(\\LaTeX\\)\nHere is some \\(\\LaTeX\\). \\[\n\\theta = 7\n\\]",
+    "crumbs": [
+      "Units",
+      "Unit 2: Next"
+    ]
+  },
+  {
+    "objectID": "units/unit2.html#evaluated-python-code",
+    "href": "units/unit2.html#evaluated-python-code",
+    "title": "Unit 2: Next",
+    "section": "Evaluated Python code",
+    "text": "Evaluated Python code\nNote that to get code output shown, the underlying notebook must have executed the code.\n\n\nCode\na=7\nprint(a)\n\n\n7",
+    "crumbs": [
+      "Units",
+      "Unit 2: Next"
+    ]
+  },
+  {
+    "objectID": "units/unit2.html#callout",
+    "href": "units/unit2.html#callout",
+    "title": "Unit 2: Next",
+    "section": "Callout",
+    "text": "Callout\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title.",
+    "crumbs": [
+      "Units",
+      "Unit 2: Next"
+    ]
+  },
+  {
+    "objectID": "units/unit3.html",
+    "href": "units/unit3.html",
+    "title": "Unit 3: More",
+    "section": "",
+    "text": "[UNDER CONSTRUCTION]\nThis is an example of using qmd as the source document with pdf as one target. I’ve taken out the qmd stuff that doesn’t seem to render to pdf.",
+    "crumbs": [
+      "Units",
+      "Unit 3: More"
+    ]
+  },
+  {
+    "objectID": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
+    "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
+    "title": "Unit 3: More",
+    "section": "Evaluated Python code chunk, with a plot",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.07179083186178226",
+    "crumbs": [
+      "Units",
+      "Unit 3: More"
+    ]
+  },
+  {
+    "objectID": "units/unit3.html#latex",
+    "href": "units/unit3.html#latex",
+    "title": "Unit 3: More",
+    "section": "LaTeX",
+    "text": "LaTeX\n\\[\n\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n\\]",
+    "crumbs": [
+      "Units",
+      "Unit 3: More"
+    ]
+  },
+  {
+    "objectID": "units/unit3.html#latex-macro",
+    "href": "units/unit3.html#latex-macro",
+    "title": "Unit 3: More",
+    "section": "LaTeX macro",
+    "text": "LaTeX macro\n\nWarning: having include-before-body in the yaml header of this file, as seemingly needed to enable macros, causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]",
+    "crumbs": [
+      "Units",
+      "Unit 3: More"
+    ]
+  },
+  {
+    "objectID": "units/macros.html",
+    "href": "units/macros.html",
+    "title": "",
+    "section": "",
+    "text": "\\[\n\\newcommand{\\trans}{^\\mathsf{T}}\n\\newcommand{\\eps}{\\epsilon}\n\\]"
   },
   {
     "objectID": "units/unit1.html",
@@ -65,7 +160,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.08048165368569511",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.10438872482803531",
     "crumbs": [
       "Units",
       "Unit 1: Intro"
@@ -127,55 +222,11 @@
     ]
   },
   {
-    "objectID": "units/unit2.html",
-    "href": "units/unit2.html",
-    "title": "Unit 2: Next",
-    "section": "",
-    "text": "[UNDER CONSTRUCTION]\nThis is an example of using an ipynb file as source rather than qmd. It follows instructions from https://github.com/DS-100/course-notes/README.md.\nLink to the data.",
-    "crumbs": [
-      "Units",
-      "Unit 2: Next"
-    ]
-  },
-  {
-    "objectID": "units/unit2.html#latex",
-    "href": "units/unit2.html#latex",
-    "title": "Unit 2: Next",
-    "section": "\\(\\LaTeX\\)",
-    "text": "\\(\\LaTeX\\)\nHere is some \\(\\LaTeX\\). \\[\n\\theta = 7\n\\]",
-    "crumbs": [
-      "Units",
-      "Unit 2: Next"
-    ]
-  },
-  {
-    "objectID": "units/unit2.html#evaluated-python-code",
-    "href": "units/unit2.html#evaluated-python-code",
-    "title": "Unit 2: Next",
-    "section": "Evaluated Python code",
-    "text": "Evaluated Python code\nNote that to get code output shown, the underlying notebook must have executed the code.\n\n\nCode\na=7\nprint(a)\n\n\n7",
-    "crumbs": [
-      "Units",
-      "Unit 2: Next"
-    ]
-  },
-  {
-    "objectID": "units/unit2.html#callout",
-    "href": "units/unit2.html#callout",
-    "title": "Unit 2: Next",
-    "section": "Callout",
-    "text": "Callout\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title.",
-    "crumbs": [
-      "Units",
-      "Unit 2: Next"
-    ]
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Statistics 999: Generic Statistics Class",
+    "title": "Department 999: Generic Class",
     "section": "",
-    "text": "Ed\n\n  DataHub\n\n  Gradescope\n\n\nNo matching items\n[UNDER CONSTRUCTION]",
+    "text": "Ed\n\n  DataHub\n\n  Gradescope\n\n  bCourses\n\n\nNo matching items\n[UNDER CONSTRUCTION]",
     "crumbs": [
       "Home / Schedule"
     ]
@@ -183,112 +234,61 @@
   {
     "objectID": "index.html#schedule",
     "href": "index.html#schedule",
-    "title": "Statistics 999: Generic Statistics Class",
+    "title": "Department 999: Generic Class",
     "section": "Schedule",
-    "text": "Schedule\nHere we use Quarto’s EJS templating.\nFor a style similar to that of Stat 20, modify index.qmd to point to assets/{schedule-alt.ejs,buttons-alt.ejs} and to {schedule-alt.yml,buttons-alt.yml} and _quarto.yml to point to assets/styles-alt.scss.\n\n\n   Week 1\n\n   \n   \n   \n   \n   \n   \n\n        \n\n           \n           \n           Aug 24:\n           \n           Lecture 1 Introduction\n           \n                \n                \n                  Note 1\n                  \n                  Note 2\n                  \n                \n           \n                \n           \n        \n\n           \n           \n           Participation 1 Lecture Participation 1\n           \n                \n           \n                \n           \n        \n   \n\n        \n\n           \n           \n           Aug 25:\n           \n           Lab 1 Prerequisite Coding (due Aug 29)\n           \n                \n           \n                \n           \n        \n\n           \n           \n           Homework 1A Plotting and Permutation Test (due Aug 31)\n           \n                \n           \n                \n           \n        \n\n           \n           \n           Homework 1B Prerequisite Math (due Aug 31)\n           \n                \n           \n                \n           \n        \n   \n   \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n   \n\n        \n\n           \n           \n           Aug 29:\n           \n           Lecture 2 Pandas 1\n           \n                \n           \n                \n           \n        \n\n           \n           \n           Participation 2 Lecture Participation 2\n           \n                \n                \n                \n           \n                \n           \n        \n   \n   \n   \n  \n\n\nNo matching items",
+    "text": "Schedule\nHere we use Quarto’s EJS templating.\nFor a style similar to that of Dept 20, modify index.qmd to point to _extensions/qmd-lab/course-website-ejs/schedule-this-week/schedule.ejs.\n\n\n\n   Week 1\n\n   \n   \n   \n   \n   \n   \n\n        \n\n           \n           \n           2024-08-23:\n           \n           \n              Lecture 1 Introduction\n           \n           \n                \n                \n                  \n                    Note 1\n                  \n                  \n                  \n                    Note 2\n                  \n                  \n                \n           \n                \n           \n        \n\n           \n           \n           \n              Participation 1 Lecture Participation 1\n           \n           \n                \n           \n                \n           \n        \n   \n\n        \n\n           \n           \n           2024-08-25:\n           \n           \n              Lecture 2 Next\n           \n           \n                \n                \n                  \n                    Note 1\n                  \n                  \n                  \n                    Note 2\n                  \n                  \n                \n           \n                \n           \n        \n\n           \n           \n           \n              Homework 1A Plotting and Permutation Test (due Aug 31)\n           \n           \n                \n           \n                \n           \n        \n\n           \n           \n           \n              Homework 1B Prerequisite Math (due Aug 31)\n           \n           \n                \n           \n                \n           \n        \n   \n   \n   \n  \n\n   Week 2\n\n   \n   \n   \n   \n   \n   \n\n        \n\n           \n           \n           2024-08-29:\n           \n           \n              Lecture 3 Pandas 1\n           \n           \n                \n           \n                \n           \n        \n\n           \n           \n           \n              Participation 2 Lecture Participation 2\n           \n           \n                \n                \n                  \n                    Note 3\n                  \n                  \n                \n           \n                \n           \n        \n   \n   \n   \n  \n\n\nNo matching items",
     "crumbs": [
       "Home / Schedule"
     ]
   },
   {
-    "objectID": "units/macros.html",
-    "href": "units/macros.html",
-    "title": "",
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
     "section": "",
-    "text": "\\[\n\\newcommand{\\trans}{^\\mathsf{T}}\n\\newcommand{\\eps}{\\epsilon}\n\\]"
+    "text": "[UNDER CONSTRUCTION]\nWe’ll use data from several real world situations in class.",
+    "crumbs": [
+      "Datasets"
+    ]
   },
   {
-    "objectID": "units/unit3.html",
-    "href": "units/unit3.html",
-    "title": "Unit 3: More",
+    "objectID": "data.html#data-1",
+    "href": "data.html#data-1",
+    "title": "Data",
+    "section": "Data 1",
+    "text": "Data 1",
+    "crumbs": [
+      "Datasets"
+    ]
+  },
+  {
+    "objectID": "data.html#data-2",
+    "href": "data.html#data-2",
+    "title": "Data",
+    "section": "Data 2",
+    "text": "Data 2",
+    "crumbs": [
+      "Datasets"
+    ]
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
     "section": "",
-    "text": "[UNDER CONSTRUCTION]\nThis is an example of using qmd as the source document with pdf as one target. I’ve taken out the qmd stuff that doesn’t seem to render to pdf.",
+    "text": "[UNDER CONSTRUCTION]\nJump to:",
     "crumbs": [
-      "Units",
-      "Unit 3: More"
+      "Syllabus"
     ]
   },
   {
-    "objectID": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
-    "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
-    "title": "Unit 3: More",
-    "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.026446546442034667",
+    "objectID": "syllabus.html#about-department-999",
+    "href": "syllabus.html#about-department-999",
+    "title": "Syllabus",
+    "section": "About Department 999",
+    "text": "About Department 999\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum.\n\nGoals\n\nGoal 1\nGoal 2\nGoal 3\n\n\n\nPrerequisites\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum.",
     "crumbs": [
-      "Units",
-      "Unit 3: More"
-    ]
-  },
-  {
-    "objectID": "units/unit3.html#latex",
-    "href": "units/unit3.html#latex",
-    "title": "Unit 3: More",
-    "section": "LaTeX",
-    "text": "LaTeX\n\\[\n\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n\\]",
-    "crumbs": [
-      "Units",
-      "Unit 3: More"
-    ]
-  },
-  {
-    "objectID": "units/unit3.html#latex-macro",
-    "href": "units/unit3.html#latex-macro",
-    "title": "Unit 3: More",
-    "section": "LaTeX macro",
-    "text": "LaTeX macro\n\nWarning: having include-before-body in the yaml header of this file, as seemingly needed to enable macros, causes extra space at top of page.\n\n\\[\nA = X \\trans Y\n\\]",
-    "crumbs": [
-      "Units",
-      "Unit 3: More"
-    ]
-  },
-  {
-    "objectID": "staff.html",
-    "href": "staff.html",
-    "title": "Staff",
-    "section": "",
-    "text": "[UNDER CONSTRUCTION]\nOffice hours are subject to change.\n\n\n\nInstructor: Person X x@berkeley.edu Office hours:  - Thursday 3pm-5pm, Evans 309  - Friday 2:00pm-4:30pm, Evans 309\n\n\nGSI: Person Y y@berkeley.edu Office hours: - Monday 11am-12pm, Evans 432 - Tuesday 4pm-5pm, Evans 432 - Wednesday 2pm-3pm, Evans 432 - Friday 12pm-1pm, Evans 432\n\n\nTutor: Person Z z@berkeley.edu Office hours:  - Wednesday 2:30pm - 4:30pm, Evans 434 - Sunday 2pm - 6pm, Zoom\n\n\nTutor: Person W w@berkeley.edu Office hours:  - Wednesday 10am-2pm, Evans 432 - Thursday 3-5pm, Evans 434",
-    "crumbs": [
-      "Staff"
-    ]
-  },
-  {
-    "objectID": "license.html",
-    "href": "license.html",
-    "title": "License",
-    "section": "",
-    "text": "This work is licensed under a Creative Commons Attribution 4.0 International License.",
-    "crumbs": [
-      "License"
-    ]
-  },
-  {
-    "objectID": "calendar.html",
-    "href": "calendar.html",
-    "title": "Calendar",
-    "section": "",
-    "text": "This is an example of embedding a widget with multiple calendars. This might be useful if you want to have different calendars for assignments, exams, instructor office hours, GSI office hours, etc.",
-    "crumbs": [
-      "Calendar"
-    ]
-  },
-  {
-    "objectID": "calendar.html#course-calendar",
-    "href": "calendar.html#course-calendar",
-    "title": "Calendar",
-    "section": "",
-    "text": "This is an example of embedding a widget with multiple calendars. This might be useful if you want to have different calendars for assignments, exams, instructor office hours, GSI office hours, etc.",
-    "crumbs": [
-      "Calendar"
-    ]
-  },
-  {
-    "objectID": "calendar.html#instructions",
-    "href": "calendar.html#instructions",
-    "title": "Calendar",
-    "section": "Instructions",
-    "text": "Instructions\nWe suggest that you delete these instructions before publishing your website.\n\nCreate the Calendars:\n\nGo to Google Calendar.\nOn the left sidebar, click the + sign next to “Other calendars” and select “Create new calendar”.\nCreate your calendars and name them appropriately.\n\nObtain the Embed Code for Each Calendar:\n\nFor each calendar, go to its settings by clicking on the three dots next to the calendar name and selecting “Settings and sharing”.\nIn the calendar settings, scroll down to “Integrate calendar” and copy the embed code provided under “Embed code”.\n\nCombine the Embed Codes:\n\nInstead of copying the entire embed code, you need the calendar’s ID, which is part of the embed URL. It will look something like calendarID@group.calendar.google.com.\nFor example, in the embed URL https://calendar.google.com/calendar/embed?src=calendarID@group.calendar.google.com, calendarID@group.calendar.google.com is the part you need.\n\nCreate a Single Embed Link:\n\nUse the base URL for embedding multiple calendars: https://calendar.google.com/calendar/embed?\nAppend each calendar ID to the base URL using the format &src=calendarID@group.calendar.google.com for each calendar you want to include.\nOptionally, you can customize the appearance by adding parameters (e.g., &color=%23F6BF26 for the color, &ctz=America%2FLos_Angeles for the time zone).\n\nFor example, if you have two calendars with IDs calendar1ID@group.calendar.google.com and calendar2ID@group.calendar.google.com, your combined embed link would look like this:\n\nhttps://calendar.google.com/calendar/embed?src=calendar1ID@group.calendar.google.com&src=calendar2ID@group.calendar.google.com\n\nSubstitute this URL into the src attribute of the calendar’s iframe at the top of this page.",
-    "crumbs": [
-      "Calendar"
+      "Syllabus"
     ]
   }
 ]
