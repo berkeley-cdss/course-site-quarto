@@ -1,0 +1,186 @@
+- week: 1
+  unit: Questions and Data
+  days:
+    - topic: No class
+      display-date: Aug 26
+      unit: Questions and Data
+    - topic: Understanding the World with Data
+      display-date: Aug 28/29
+      date: 8/27/24
+      before-class:
+        docs:
+          - type: Notes
+            href: 1-questions-and-data/notes.qmd
+            hide-from-schedule: true
+            unit: Questions and Data
+            topic: Understanding the World with Data
+            display-date: Aug 28/29
+            date: 8/27/24
+            draft: false
+          - type: Notes
+            href: 1-questions-and-data/01-understanding-the-world/notes.qmd
+            unit: Questions and Data
+            topic: Understanding the World with Data
+            display-date: Aug 28/29
+            date: 8/27/24
+            draft: false
+        unit: Questions and Data
+        topic: Understanding the World with Data
+        display-date: Aug 28/29
+        date: 8/27/24
+      in-class:
+        docs:
+          - type: Slides
+            href: 1-questions-and-data/01-understanding-the-world/slides.qmd
+            unit: Questions and Data
+            topic: Understanding the World with Data
+            display-date: Aug 28/29
+            date: 8/27/24
+            draft: false
+          - type: Handout
+            href: 1-questions-and-data/01-understanding-the-world/handout.qmd
+            unit: Questions and Data
+            topic: Understanding the World with Data
+            display-date: Aug 28/29
+            date: 8/27/24
+            draft: false
+          - type: Lab
+            title: UN Votes
+            sub-type: Part II
+            href: 1-questions-and-data/labs/unvotes/part-2.qmd
+            unit: Questions and Data
+            topic: Understanding the World with Data
+            display-date: Aug 28/29
+            date: 8/27/24
+            draft: false
+        unit: Questions and Data
+        topic: Understanding the World with Data
+        display-date: Aug 28/29
+        date: 8/27/24
+      unit: Questions and Data
+    - topic: No class
+      display-date: Aug 30
+      unit: Questions and Data
+- week: 2
+  unit: Summarization
+  days:
+    - topic: Labor Day (no class)
+      display-date: Sep 2
+      due-tomorrow:
+        - Lab 1
+        - WSP 1
+      unit: Summarization
+    - topic: Taxonomy of Data
+      unit: Questions and Data
+      display-date: Sep 3/4
+      date: 9/3/24
+      before-class:
+        docs:
+          - type: Notes
+            href: 1-questions-and-data/02-taxonomy-of-data/notes.qmd
+            unit: Questions and Data
+            topic: Taxonomy of Data
+            display-date: Sep 3/4
+            date: 9/3/24
+            draft: false
+          - type: Tutorial
+            href: 1-questions-and-data/02-taxonomy-of-data/tutorial.qmd
+            unit: Questions and Data
+            topic: Taxonomy of Data
+            display-date: Sep 3/4
+            date: 9/3/24
+            draft: false
+        unit: Questions and Data
+        topic: Taxonomy of Data
+        display-date: Sep 3/4
+        date: 9/3/24
+      in-class:
+        docs:
+          - type: Slides
+            href: 1-questions-and-data/02-taxonomy-of-data/slides.qmd
+            unit: Questions and Data
+            topic: Taxonomy of Data
+            display-date: Sep 3/4
+            date: 9/3/24
+            draft: false
+          - type: WS
+            href: 1-questions-and-data/02-taxonomy-of-data/ws.qmd
+            unit: Questions and Data
+            topic: Taxonomy of Data
+            display-date: Sep 3/4
+            date: 9/3/24
+            draft: false
+        unit: Questions and Data
+        topic: Taxonomy of Data
+        display-date: Sep 3/4
+        date: 9/3/24
+    - topic: Summarizing Categorical Data
+      unit: Summarization
+      display-date: Sep 5/6
+      date: 9/5/24
+      before-class:
+        docs:
+          - type: Notes
+            href: 2-summarizing-data/notes.qmd
+            hide-from-schedule: true
+            unit: Summarization
+            topic: Summarizing Categorical Data
+            display-date: Sep 5/6
+            date: 9/5/24
+            draft: false
+          - type: Notes
+            href: 2-summarizing-data/01-summarizing-categorical-data/notes.qmd
+            unit: Summarization
+            topic: Summarizing Categorical Data
+            display-date: Sep 5/6
+            date: 9/5/24
+            draft: false
+          - type: Tutorial
+            href: 2-summarizing-data/01-summarizing-categorical-data/tutorial.qmd
+            unit: Summarization
+            topic: Summarizing Categorical Data
+            display-date: Sep 5/6
+            date: 9/5/24
+            draft: false
+        unit: Summarization
+        topic: Summarizing Categorical Data
+        display-date: Sep 5/6
+        date: 9/5/24
+      in-class:
+        docs:
+          - type: Slides
+            href: 2-summarizing-data/01-summarizing-categorical-data/slides.qmd
+            unit: Summarization
+            topic: Summarizing Categorical Data
+            display-date: Sep 5/6
+            date: 9/5/24
+            draft: false
+          - type: WS
+            href: 2-summarizing-data/01-summarizing-categorical-data/ws.qmd
+            unit: Summarization
+            topic: Summarizing Categorical Data
+            display-date: Sep 5/6
+            date: 9/5/24
+            draft: false
+          - type: Lab
+            title: Class Survey
+            sub-type: Slides
+            href: 2-summarizing-data/labs/class-survey/slides.qmd
+            unit: Summarization
+            topic: Summarizing Categorical Data
+            display-date: Sep 5/6
+            date: 9/5/24
+            draft: false
+          - type: Lab
+            title: Class Survey
+            sub-type: Part I
+            href: 2-summarizing-data/labs/class-survey/part-1.qmd
+            unit: Summarization
+            topic: Summarizing Categorical Data
+            display-date: Sep 5/6
+            date: 9/5/24
+            draft: false
+        unit: Summarization
+        topic: Summarizing Categorical Data
+        display-date: Sep 5/6
+        date: 9/5/24

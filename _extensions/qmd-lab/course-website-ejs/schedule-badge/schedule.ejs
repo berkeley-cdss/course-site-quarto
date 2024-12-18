@@ -1,0 +1,97 @@
+```{=html}
+<style>
+.label {
+    border-radius: 9px;
+    padding: 5px;
+    color: white;
+}
+
+.label-Lecture { background-color: #4767FF}
+.label-Participation { background-color:  #7A2CAB}
+.label-Lab { background-color: #facd05}
+.label-Homework { background-color: crimson}
+.label-Exam { background-color: green}
+
+#th-schedule {
+    width: 15%;
+    text-align: center;
+}
+
+#td-schedule:first-of-type {
+    width: 55%;
+}
+
+#td-schedule:last-of-type {
+    width: 30%;
+}
+
+table {
+    border: 2px solid;
+}
+
+.border {
+  color:#069;
+  font-weight: bold;
+}
+
+a.unpublished {
+  color:#808080
+}
+
+</style>
+```
+
+
+```{=html}
+<% const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; %>
+
+
+<% for (const item of items) { %>
+
+   <h4>Week <%- item.week %></h4>
+
+   <table class="table" data-quarto-disable-processing="true">
+   <!-- 'table' class causes use of quarto styling for tables, seemingly from bootstrap.min.css -->
+   <!-- data-quarto-disable-processing="true" prevents Quarto processing of tables (https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing) -->
+   
+   <tbody>
+   <% for (const day of item.days) { %>
+
+        <% for (let i = 0; i < day.docs.length; i++) { %>
+
+           <tr>
+           <% let text = day['date'].split("-"); %>
+           <% let month = monthNames[Number(text[1])-1]; %>
+           <% let dayNum = Number(text[2]); %>
+           <% if (i == 0) { %>
+           <th id="th-schedule" scope="row" rowspan="<%- day.docs.length %>"><%- month %> <%- dayNum %>:</th>
+           <% } %>
+           <% if (!day.docs[i].draft){ %>
+              <td id="td-schedule"><strong class="label label-<%- day.docs[i].type %>"><%- day.docs[i].type %> <%- day.docs[i].id %></strong> <a href="<%- day.docs[i].href %>" target="_blank"><%- day.docs[i].name %></a></td>
+           <% } else { %>
+              <td id="td-schedule"><strong class="label label-<%- day.docs[i].type %>"><%- day.docs[i].type %> <%- day.docs[i].id %></strong> <a class="unpublished"><%- day.docs[i].name %></a></td>
+           <% } %>
+           <% if (day.docs[i].auxil) { %>
+                <td id="td-schedule">
+                <% for (let j = 0; j < day.docs[i].auxil.items.length; j++) { %>
+                  <% if (!day.docs[i].draft){ %>
+                    <a href="<%- day.docs[i].auxil.items[j].href %>"><%- day.docs[i].auxil.items[j].id %></a>
+                  <% } else { %>
+                    <a class="unpublished"><%- day.docs[i].auxil.items[j].id %></a>
+                  <% } %>
+                  <% } %>
+                </td>
+           <% } else{ %>
+                <td></td>
+           <% } %>
+                
+           </tr>
+        <% } %>
+   <% } %>
+   </tbody>
+   </table>
+  
+
+<% } %>
+
+```

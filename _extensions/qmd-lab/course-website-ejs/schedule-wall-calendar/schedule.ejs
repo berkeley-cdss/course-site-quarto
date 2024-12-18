@@ -1,0 +1,168 @@
+```{=html}
+<style>
+.calendar, .this-week {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.calendar .week-x-box, .this-week .week-x-box {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  border-radius: 3px;
+  box-shadow: 0 0 0.5rem #dfd7ca;
+  min-height: 200px;
+}
+.calendar .week-x-box .daily-sched, .this-week .week-x-box .daily-sched {
+  border-bottom: 1px solid #dfd7ca;
+  border-right: 1px solid #dfd7ca;
+  padding: 3px 8px 17px 8px;
+}
+.calendar .week-x-box .daily-sched .date-cell, .this-week .week-x-box .daily-sched .date-cell {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 0.8em;
+}
+.calendar .week-x-box .daily-sched .daily-topic-cell, .this-week .week-x-box .daily-sched .daily-topic-cell {
+  padding-bottom: 2px;
+}
+.calendar .week-x-box .daily-sched .daily-topic-cell .daily-topic, .this-week .week-x-box .daily-sched .daily-topic-cell .daily-topic {
+  font-size: 1.1em;
+}
+.calendar .week-x-box .daily-sched .items-cell, .this-week .week-x-box .daily-sched .items-cell {
+  padding-left: 12px;
+}
+.calendar .week-x-box .daily-sched .items-cell .before-in-class, .this-week .week-x-box .daily-sched .items-cell .before-in-class {
+  font-size: 0.8em;
+}
+.calendar .week-x-box .daily-sched .items-cell .badge, .this-week .week-x-box .daily-sched .items-cell .badge {
+  background-color: #93c54b;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.calendar .week-x-box .daily-sched .items-cell .badge:hover, .this-week .week-x-box .daily-sched .items-cell .badge:hover {
+  background-color: #74a134;
+}
+.calendar .week-x-box .daily-sched .items-cell .badge.unpublished, .this-week .week-x-box .daily-sched .items-cell .badge.unpublished {
+  background-color: #dfd7ca;
+}
+.calendar .week-x-box .daily-sched .items-cell .assignment-list, .this-week .week-x-box .daily-sched .items-cell .assignment-list {
+  font-size: 0.8em;
+}
+@media (max-width: 768px) {
+  .calendar .week-x-box, .this-week .week-x-box {
+    grid-auto-flow: row; /* Ensures it flows in one column */
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+```
+
+```{=html}
+<div class="calendar">
+<% for (const week of items) { %>
+  <!-- Create each week -->
+  <h4>Week <%= week.week %></h4>
+  <div class="week-x-box">
+
+  <% for (const day of week.days) { %>
+    <!-- Create each day -->
+    <div class="daily-sched">
+    <div class="date-cell">
+    <span><%= day['display-date'] %></span>
+    </div>
+    <div class="daily-topic-cell">
+    <span class="daily-topic"><%= day.topic %></span>
+    </div>
+
+    <div class="items-cell">
+    <!-- Create badges for docs -->
+    <!-- ...docs listed under before-class key -->
+    <% if (day['before-class'] !== undefined) { %>
+      <div>
+      <span class="before-in-class">Before class:</span><br>
+      <% if (day['before-class'].docs && day['before-class'].docs.length > 0) { %>
+        <% for (const doc of day['before-class'].docs) { %>
+          <% if (doc['hide-from-schedule'] === undefined || doc['hide-from-schedule'] === false){ %>
+            <% let label = doc.label ? doc.label : doc.type; %>
+            <% if (doc["sub-type"] && doc["sub-type"].trim() !== "") { %>
+              <%  label = `${label}: ${doc["sub-type"]}`; %>
+            <% } %>
+            <% if (!doc.draft){ %>
+              <a href="<%= doc.href %>" class="badge <%=`${label}-badge`%>" ><%= label %></a>
+            <% } else if (doc.projectProfile === "staff-site") { %>
+              <a href="<%= doc.href %>" class="badge <%=`${label}-badge`%>"><%= label %></a>
+            <% } else { %>
+              <span class="badge unpublished"><%= label %></span>
+            <% } %>
+          <% } %>
+        <% } %>
+      <% } %>
+      </div>
+    <% } %>
+    <!-- ...docs listed under in-class key -->
+    <% if (day['in-class'] !== undefined) { %>
+      <div>
+      <span class="before-in-class">In class:</span><br>
+      <% if (day['in-class'].docs && day['in-class'].docs.length > 0) { %>
+        <% for (const doc of day['in-class'].docs) { %>
+          <% if (doc['hide-from-schedule'] === undefined || doc['hide-from-schedule'] === false){ %>
+            <% let label = doc.label ? doc.label : doc.type; %>
+            <% if (doc["sub-type"] && doc["sub-type"].trim() !== "") { %>
+              <%  label = `${label}: ${doc["sub-type"]}`; %>
+            <% } %>
+            <% if (!doc.draft){ %>
+              <a href="<%= doc.href %>" class="badge <%=`${label}-badge`%>" ><%= label %></a>
+            <% } else if (doc.projectProfile === "staff-site") { %>
+              <a href="<%= doc.href %>" class="badge <%=`${label}-badge`%>"><%= label %></a>
+            <% } else { %>
+              <span class="badge unpublished"><%= label %></span>
+            <% } %>
+          <% } %>
+        <% } %>
+      <% } %>
+      </div>
+    <% } %>
+    <!-- ...docs listed directly under day item -->
+    <% if (day.docs && day.docs.length > 0) { %>
+      <div>
+      <% for (const doc of day.docs) { %>
+        <% if (doc['hide-from-schedule'] === undefined || doc['hide-from-schedule'] === false){ %>
+          <% let label = doc.label ? doc.label : doc.type; %>
+          <% if (doc["sub-type"] && doc["sub-type"].trim() !== "") { %>
+            <%  label = `${label}: ${doc["sub-type"]}`; %>
+          <% } %>
+          <% if (!doc.draft){ %>
+            <a href="<%= doc.href %>" class="badge <%=`${label}-badge`%>" ><%= label %></a>
+          <% } else if (doc.projectProfile === "staff-site") { %>
+            <a href="<%= doc.href %>" class="badge <%=`${label}-badge`%>"><%= label %></a>
+          <% } else { %>
+            <span class="badge unpublished"><%= label %></span>
+          <% } %>
+        <% } %>
+      <% } %>
+      </div>
+    <% } %>
+    <!-- ...things that are due tomorrow -->
+    <% if (day['due-tomorrow'] !== undefined) { %>
+      <div>
+      <span class="before-in-class">Due tomorrow:</span><br>
+      <% if (day['due-tomorrow'].length > 0) { %>
+        <ul class="assignment-list">
+        <% for (const assignment of day['due-tomorrow']) { %>
+          <li><%= assignment %></li>
+        <% } %>
+        </ul>
+      <% } %>
+      </div>
+    <% } %>
+    </div>
+    </div>
+    
+  <% } %>
+  
+  </div>
+<% } %>
+
+</div>
+
+```

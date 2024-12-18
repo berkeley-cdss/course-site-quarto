@@ -3,8 +3,8 @@ title: "Department 999: Generic Class"
 subtitle: "UC Berkeley, Spring 2024"
 listing:
   - id: schedule
-    template: assets/schedule.ejs
-    contents: schedule.yml
+    template: _extensions/qmd-lab/course-website-ejs/schedule-badge/schedule.ejs
+    contents: scheduled-docs_files/schedule.yml
   - id: buttons
     template: assets/buttons.ejs
     contents: buttons.yml
@@ -27,7 +27,6 @@ Things are picking up now.
 
 Here we use Quarto's EJS templating.
 
-For a style similar to that of [Dept 20](https://stat20.berkeley.edu), modify `index.qmd` to point to `assets/{schedule-alt.ejs,buttons-alt.ejs}` and to `{schedule-alt.yml,buttons-alt.yml}` and `_quarto.yml` to point to `assets/styles-alt.scss`.
 
 ::: {#schedule}
 :::

@@ -1,0 +1,44 @@
+scheduled-docs:
+  draft-after: "2024-08-24"
+  timezone: "-07:00"
+  debug: true
+  schedule:
+    - week: 1
+      days:
+        - date: "2024-08-23"
+          docs:
+            - type: "Lecture"
+              id: "1"
+              name: Introduction
+              href: "units/unit1.qmd"
+              auxil:
+                items:
+                  - id: "Note 1"
+                    href: "https://berkeley.edu"
+                  - id: "Note 2"
+                    href: "https://berkeley.edu"
+            - type: "Participation"
+              id: "1"
+              name: Lecture Participation 1
+              href: "https://berkeley.edu"
+        - date: "2024-08-25"
+          docs:
+            - type: "Lecture"
+              id: "2"
+              name: Next
+              href: "units/unit2.ipynb"
+              auxil:
+                items:
+                  - id: "Note 1"
+                    href: "https://berkeley.edu"
+                  - id: "Note 2"
+                    href: "https://berkeley.edu"
+            - type: "Homework"
+              id: "1A"
+              name: Plotting and Permutation Test (due Aug 31)
+              href: "https://berkeley.edu"
+            - type: "Homework"
+              id: "1B"
+              name: Prerequisite Math (due Aug 31)
+              href: "https://berkeley.edu"
+
