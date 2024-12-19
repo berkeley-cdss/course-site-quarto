@@ -5,7 +5,7 @@ website:
   site-url: https://berkeley-cdss.github.io/course-site-quarto/
   sidebar:
     style: docked
-    title: "Dept 999"
+    title: "{{< var department-abbrev >}} {{< var number >}}"
     logo: assets/stat_bear.png
     logo-alt: "UC Berkeley Statistics logo"
     tools:

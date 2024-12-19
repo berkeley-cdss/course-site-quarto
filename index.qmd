@@ -1,6 +1,6 @@
 ---
-title: "Department 999: Generic Class"
-subtitle: "UC Berkeley, Spring 2024"
+title: "{{< var department >}} {{< var number >}}: {{< var name >}}"
+subtitle: "UC Berkeley, {{< var semester >}}"
 listing:
   - id: schedule
     template: _extensions/qmd-lab/course-website-ejs/schedule-badge/schedule.ejs
