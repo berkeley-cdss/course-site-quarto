@@ -109,7 +109,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n0.13547893953988463",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n0.0834896105327351",
     "crumbs": [
       "Units",
       "Unit 3: More"
@@ -160,7 +160,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n-0.15575763627302536",
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\n0.080622751461345",
     "crumbs": [
       "Units",
       "Unit 1: Intro"
@@ -282,8 +282,8 @@
     ]
   },
   {
-    "objectID": "syllabus.html#about-department-999",
-    "href": "syllabus.html#about-department-999",
+    "objectID": "syllabus.html#about",
+    "href": "syllabus.html#about",
     "title": "Syllabus",
     "section": "About Department 999",
     "text": "About Department 999\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum.\n\nGoals\n\nGoal 1\nGoal 2\nGoal 3\n\n\n\nPrerequisites\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lectus dui, euismod vel tellus sit amet, maximus fringilla risus. Cras nec maximus leo. Fusce sit amet tortor pellentesque, hendrerit odio vitae, dictum lorem. Nunc sed nunc nisl. Cras augue tortor, ultrices ut luctus non, dictum nec magna. Cras vel ex purus. In blandit est non finibus dignissim. Donec vehicula, nisi quis rutrum faucibus, est turpis ultrices nibh, quis rutrum diam nibh tempus nulla. Vestibulum malesuada consectetur ex in vestibulum.",
