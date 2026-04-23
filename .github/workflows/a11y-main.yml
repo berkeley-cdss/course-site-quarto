@@ -1,0 +1,98 @@
+name: Accessibility Checks (main)
+
+on:
+  push:
+    branches-ignore:
+      - gh-pages
+  workflow_dispatch:
+
+env:
+  # SITE_SUBDIR is where your site is deployed. 
+  # If deployed at example.com/notes, SITE_SUBDIR should be
+  # "notes" if deployed at the root, leave empty
+  SITE_SUBDIR: ${{ github.event.repository.name }}
+
+permissions:
+  contents: read
+  pages: read
+
+jobs:
+  axe-audit-render-from-main:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Checkout Code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Quarto
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      
+      # 3. Setup Node.js (for Axe and http-server)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      # 5. Render the Site
+      - name: Render Quarto Site
+        run: quarto render
+
+      # 6. Install Tools
+      - name: Install Axe and Server
+        run: npm install -g @axe-core/cli http-server wait-on
+
+      # 7. Determine the Production URL via GitHub Pages metadata
+      - name: Set Production URL
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Fetch the URL configured in Settings > Pages
+          # This returns the custom domain or the username.github.io/repo URL
+          PAGES_URL=$(gh api repos/${{ github.repository }}/pages --template '{{.html_url}}')
+          
+          echo "PRODUCTION_URL=$PAGES_URL" >> $GITHUB_ENV
+          echo "Detected Production URL: $PAGES_URL"
+
+      # 8. Start Local Server (Background Process)
+      - name: Start Local Server
+        run: |
+          # We create a 'public/SITE_SUBDIR' folder so the local server 
+          # mimics the production path structure exactly.
+          mkdir -p public/${{ env.SITE_SUBDIR }}
+          cp -r _site/* public/${{ env.SITE_SUBDIR }}/
+          
+          # Serve the 'public' folder on port 3000
+          npx http-server ./public -p 3000 > /dev/null 2>&1 &
+          npx wait-on http://localhost:3000/
+
+      # 9. Run Axe Scan
+      - name: Run Accessibility Scan
+        id: axe-scan
+        run: |
+          # Swap the Production URL for Localhost + Subdirectory 
+          CLEAN_PROD_URL=$(echo "$PRODUCTION_URL" | sed 's|/$||')
+          LOCAL_URL="http://localhost:3000/${{ env.SITE_SUBDIR }}/"
+          
+          URLS=$(cat _site/sitemap.xml | \
+            sed -n 's/.*<loc>\(.*\)<\/loc>.*/\1/p' | \
+            sed "s|$CLEAN_PROD_URL|$LOCAL_URL|" | \
+            tr '\n' ' ')
+
+          echo "Scanning the following pages:"
+          echo "$URLS"
+
+          # Run Axe
+          axe $URLS \
+            --tags wcag2a,wcag2aa,wcag21a,wcag21aa \
+            --save axe-report.json \
+            --exit
+
+      # 10. Upload Report (Runs even if Step 8 fails)
+      - name: Upload Accessibility Report
+        if: always() 
+        uses: actions/upload-artifact@v4
+        with:
+          name: axe-report
+          path: axe-report.json
