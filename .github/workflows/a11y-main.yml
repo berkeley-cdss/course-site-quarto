@@ -36,8 +36,10 @@ jobs:
           node-version: '20'
       
       # 5. Render the Site
-      - name: Render Quarto Site
-        run: quarto render
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html 
 
       # 6. Install Tools
       - name: Install Axe and Server
