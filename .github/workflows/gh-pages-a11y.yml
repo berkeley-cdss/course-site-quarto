@@ -1,0 +1,84 @@
+name: Accessibility Checks
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+  workflow_dispatch:
+
+env:
+  SITE_SUBDIR: ${{ github.event.repository.name }}
+
+jobs:
+  axe-audit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Checkout Code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+      
+      # 2. Setup Node.js (for Axe and http-server)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3. Install Tools
+      - name: Install Axe and Server
+        run: npm install -g @axe-core/cli http-server wait-on
+
+      # 4. Start Local Server (Background Process)
+      - name: Start Local Server
+        run: |
+          npx http-server ./ -p 3000 > /dev/null 2>&1 &
+          npx wait-on http://localhost:3000/
+
+      # 5. Run Axe Scan
+      - name: Run Accessibility Scan
+        id: axe-scan
+        run: |
+          # 1. Get the first URL from the sitemap
+          FIRST_URL=$(grep -m 1 "<loc>" sitemap.xml | sed 's/.*<loc>\(.*\)<\/loc>.*/\1/')
+          
+          echo "Sample URL from sitemap: $FIRST_URL"
+
+          # 2. Extract the base URL accurately.
+          # Look for 'http(s)://domain.com/subdir/' using regex to ensure we capture the domain.
+          BASE_URL_TO_REPLACE=$(echo "$FIRST_URL" | grep -oE "^https?://[^/]+/${{ env.SITE_SUBDIR }}/")
+          
+          LOCAL_URL="http://localhost:3000/"
+          
+          if [ -z "$BASE_URL_TO_REPLACE" ]; then
+            echo "Error: Could not determine base URL from $FIRST_URL using subdir ${{ env.SITE_SUBDIR }}"
+            exit 1
+          fi
+
+          echo "Replacing $BASE_URL_TO_REPLACE with $LOCAL_URL"
+
+          # 3. Generate URL list
+          # Use '|' as the delimiter in sed to avoid conflicts with slashes in URLs
+          URLS=$(cat sitemap.xml | \
+            sed -n 's/.*<loc>\(.*\)<\/loc>.*/\1/p' | \
+            sed "s|$BASE_URL_TO_REPLACE|$LOCAL_URL|" | \
+            tr '\n' ' ')
+
+          echo "Scanning the following pages:"
+          echo "$URLS"
+
+          # Run Axe
+          axe $URLS \
+            --tags wcag2a,wcag2aa,wcag21a,wcag21aa \
+            --save axe-report.json \
+            --exit
+
+      # 6. Upload Report (Runs even if previous step fails)
+      - name: Upload Accessibility Report
+        if: always() 
+        uses: actions/upload-artifact@v4
+        with:
+          name: axe-report
+          path: axe-report.json
