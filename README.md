@@ -19,6 +19,7 @@ For instructors: please see [these instructions](https://github.com/berkeley-cds
    - Various nice features such as callouts, tabsets, code folding, etc.
    - The ability to embed raw HTML for full flexibility when your output is HTML (but not PDF), including styling using CSS.
    - The ability to dynamically populate HTML elements with data from plain text data files (in yml format).
+- Accessibility audit of the deployed website.
 
 ## Terminology
 
@@ -213,4 +214,8 @@ Staff are happy to help. Please [contact us](https://statistics.berkeley.edu/com
 This is the repository for the course website and course material for Department XYZ for Fall 2024. 
 The website for which this content is the source materials is available at <https://statXYZ.berkeley.edu/fall-2024>.
 
+## Accessibility Audit Overview
 
+Two actions exist to audit digital accessibility WCAG 2.1 AA compliance.
+1. `gh-pages-a11y.yml` uses the files that have been rendered and then pushed to the `gh-pages` for its audit. This audit is of the actively deployed site.
+2. `main-a11y.yml` first renders the files on the `main` branch and then conducts an audit. This audit may not reflect the exact state of the deployed website if the `main` and `gh-pages` branches are out of sync.
