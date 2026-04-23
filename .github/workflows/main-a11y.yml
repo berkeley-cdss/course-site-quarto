@@ -34,6 +34,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      # 4. Install Python dependencies
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
       
       # 5. Render the Site
       - name: Render Quarto Project
