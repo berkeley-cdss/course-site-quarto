@@ -1,4 +1,4 @@
-name: Accessibility Checks
+name: Accessibility Checks (gh-pages)
 
 on:
   workflow_run:
