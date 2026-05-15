@@ -1,5 +1,7 @@
 # course-site-quarto
 
+![Accessibility Score](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/berkeley-cdss/course-site-quarto/badges/a11y-badge.json)
+
 This repository contains a Quarto-based template for class website. You can see a preview of it at [https://berkeley-cdss.github.io/course-site-quarto](https://berkeley-cdss.github.io/course-site-quarto). This template is intended to be forked and altered for other courses.
 
 For instructors: please see [these instructions](https://github.com/berkeley-cdss/course-site-quarto#instructions-for-course-staff) on how to use this repository.

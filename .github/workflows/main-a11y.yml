@@ -102,3 +102,15 @@ jobs:
         with:
           name: axe-report
           path: axe-report.json
+
+      # 11. Calculate and Push Badge
+      - name: Calculate and Push Badge
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 1. Calculate the score and create the JSON file
+          node .github/scripts/generate-badge.js
+          
+          # 2. Push to the orphaned 'badges' branch using Force Push
+          bash .github/scripts/push-badge.sh
