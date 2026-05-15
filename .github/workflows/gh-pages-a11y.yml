@@ -10,6 +10,9 @@ on:
 env:
   SITE_SUBDIR: ${{ github.event.repository.name }}
 
+permissions:
+  contents: write
+
 jobs:
   axe-audit:
     runs-on: ubuntu-latest

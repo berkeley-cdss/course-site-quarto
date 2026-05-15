@@ -13,7 +13,7 @@ env:
   SITE_SUBDIR: ${{ github.event.repository.name }}
 
 permissions:
-  contents: read
+  contents: write
   pages: read
 
 jobs:
