@@ -19,6 +19,7 @@ This is an example of using qmd as the source document with pdf as one target. I
 
 ```{python}
 #| fig-alt: "Histogram of a random normal distribution"
+#| out-width: "100%"
 import numpy as np
 x = np.random.normal(size=100)
 import matplotlib.pyplot as plt
