@@ -1,8 +1,7 @@
 ```{=html}
+<div id="listing-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
 <% for (const item of items) { %>
-
-  <button style="background-color: <%- item.color %>;"><a href=<%- item.link %> target="_blank"><%- item.button %></a></button>
-
+  <a href="<%- item.link %>" target="_blank" style="display: inline-block; padding: 8px 16px; background-color: <%- item.color %>; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; border: 1px solid <%- item.color %>;"><%- item.button %></a>
 <% } %>
-
+</div>
 ```
