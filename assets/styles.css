@@ -8,11 +8,19 @@ button {
     border-radius: 4px;
 }
 
-/* Fix scrollable-region-focusable: force code outputs to wrap instead of scroll */
+/* Fix scrollable-region-focusable: prevent overflow on cell output containers */
+.cell-output-display {
+    overflow-x: visible !important;
+}
+
 .cell-output-display pre {
-    max-width: 100%;
     white-space: normal;
     word-break: break-all;
+}
+
+.cell-output-display .figure-img {
+    max-width: 100%;
+    height: auto;
 }
 
 
