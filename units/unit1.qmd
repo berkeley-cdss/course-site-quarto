@@ -23,7 +23,7 @@ np.mean(x)
 ```
 
 
-## $\LaTeX$
+## LaTeX
 
 $$
 \theta = \int_0^\infty f(x,\theta)d\theta
